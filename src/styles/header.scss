@@ -1,0 +1,104 @@
+@import "./responsive.scss";
+
+.header {
+  background-color: var(--base-color-100);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include sm {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.logo {
+  @include sm {
+    display: none;
+  }
+}
+
+.small-logo {
+  @include xl {
+    display: none;
+  }
+  
+  @include lg {
+    display: none;
+  }
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.header-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include sm {
+    order: 2;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  color: var(--base-color-800);
+}
+
+.header-input {
+  width: 709px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #FAFAFA;
+  color: #CCCCCC;
+  font-size: 16px;
+  border: 1px solid #E6E6E6;
+  outline: none;
+
+  @include md {
+    width: 359px;
+  }
+}
+
+.header-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  margin-right: 40px;
+ 
+  @include sm {
+    gap: 40px;
+    margin-bottom: 16px;
+    margin-right: 0;
+    order: 1;
+  }
+}
+
+.discover-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--base-color-800);
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--base-color-100);
+  font-weight: 600;
+  background-color: var(--base-color-800);
+  width: 202px;
+  height: 41px;
+  border-radius: 4px;
+}
