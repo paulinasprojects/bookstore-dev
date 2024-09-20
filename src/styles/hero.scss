@@ -1,0 +1,206 @@
+@import "./responsive.scss";
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.hero-title-container {
+  margin-top: 166px;
+  margin-left: 80px;
+
+  @include md {
+    margin-top: 23px;
+    margin-left: 60px;
+  }
+
+  @include sm {
+    order: 2;
+    margin-left: 20px;
+  }
+}
+
+.hero-textt {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 120%;
+
+  @include md {
+    font-size: 48px;
+  }
+
+  @include sm {
+    font-size: 32px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  font-size: 24px;
+  color: var(--base-color-500);
+
+  @include md {
+    font-size: 18px;
+  }
+}
+
+.hero-button-container {
+  margin-top: 24px;
+}
+
+.hero-button {
+  width: 202px;
+  height: 41px;
+  border-radius: 4px;
+  outline: 1.5px solid var(--base-color-800);
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.hero-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+.hero-image-container {
+  margin-top: 41px;
+  margin-right: 40px;
+
+  @include sm {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+.hero-image {
+  @include md {
+    width: 552px;
+    height: 436px;
+  }
+
+  @include sm {
+    width: 335px;
+    height: 400px;
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 68px;
+
+  @include md {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  @include sm {
+    
+  }
+}
+
+.hero-testimonial-container {
+  width: 350px;
+  height: 193px;
+  background-color: var(--base-color-100);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 80px;
+
+  @include md  {
+    width: 346px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: -35px;
+  }
+
+  @include sm {
+    width: 335px;
+    height: 190px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
+
+.profile-pic {
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 16px;
+
+  @include sm {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.testimonial-title {
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+.testimonial-description {
+  margin-left: 24px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--base-color-500);
+}
+
+.milestone-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 80px;
+
+  @include md {
+    margin-left: 80px;
+  }
+
+  @include sm {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.milestone-container {
+  display: flex;
+  gap: 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.number {
+  color: var(--base-color-300);
+}
+
+.testimonial-milestone-description {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
