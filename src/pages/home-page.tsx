@@ -1,9 +1,11 @@
-import Hero from "../components/hero"
+import NewBooks from "@/components/new-book"
+import Hero from "@/components/hero"
 
 const HomePage = () => {
   return (
     <>
     <Hero/>
+    <NewBooks/>
     </>
   )
 }

@@ -1,0 +1,86 @@
+@import "./responsive.scss";
+
+.book-card-container {
+  margin-left: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+
+  @include md {
+    margin-left: 60px;
+    gap: 24px;
+  }
+
+  @include sm {
+    margin-left: 60px;
+    flex-direction: column;
+    gap: 65px;
+  }
+}
+
+
+.book-card-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.book-image {
+  width: 232px;
+  height: 340px;
+
+  @include md {
+    width: 210px;
+    height: 276px;
+  }
+}
+
+.book-title {
+  margin-top: 34px;
+}
+
+.book-separator {
+  width: 322px;
+  height: 2px;
+  background-color: var(--base-color-200);
+  color: var(--base-color-200);
+  border: none;
+}
+
+.book-card-writer-and-price-container {
+  display: flex;
+  gap: 61px;
+  margin-top: 8px;
+}
+
+.book-card-writer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .writer {
+    color: var(--base-color-400);
+  }
+}
+
+.book-card-buy-now {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 61px;
+
+  .buy-now {
+    color: var(--base-color-400);
+  }
+}
+
+.book-card-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .discount-price {
+    color: var(--information-red-color-400);
+  }
+}

@@ -107,14 +107,11 @@
 .testimonial-container {
   display: flex;
   gap: 68px;
+  margin-bottom: 20px;
 
   @include md {
     flex-direction: column;
     gap: 0;
-  }
-
-  @include sm {
-    
   }
 }
 

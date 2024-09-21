@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import heroImage from '/hero-image.png'
 import profilePic from '/profile-pic-big.png';
-import MilestoneContent from "./milestone-content";
+import MilestoneContent from "@/components/milestone-content";
 
 import "../styles/hero.scss";
 

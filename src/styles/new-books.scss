@@ -1,0 +1,67 @@
+@import "./responsive.scss";
+
+.new-books-container {
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-bottom: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include sm {
+    gap: 24px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+
+.new-books-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 120%;
+
+  @include md {
+    font-size: 3rem;
+  }
+
+  @include sm {
+    font-size: 2rem;
+  }
+}
+
+.new-books-button-container {
+  margin-right: 80px;
+  display: flex;
+  gap: 13px;
+}
+
+.arrow-back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 100%;
+  border: none;
+  outline: 1.5px solid var(--base-color-200);
+  color: var(--base-color-700);
+  cursor: pointer;
+}
+
+.arrow-forward-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--base-color-800);
+  color: var(--white);
+  border-radius: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.new-books-arrow-icon {
+  width: 30px;
+  height: 30px;
+}
