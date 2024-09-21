@@ -1,0 +1,293 @@
+@import "./responsive.scss";
+
+.book-of-the-week-container {
+  padding-bottom: 20px;
+  background-color: var(--base-color-700);
+
+  @include sm {
+    width: 430px;
+    height: 1504px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column ;
+  }
+}
+
+.book-of-the-week-title-container {
+  padding-top: 100px;
+  margin-left: 80px;
+  margin-bottom: 65px;
+  margin-right: 80px;
+
+  @include sm {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .book-of-the-week-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 120%;
+    color: var(--base-color-100);
+
+    @include sm {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 120%;
+      color: var(--base-color-100);
+      white-space: nowrap;
+    }
+  }
+}
+
+.book-of-the-week-flex-container {
+  display: flex;
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.book-of-the-week-card-container {
+  width: 695px;
+  height: 610px;
+  background-color: var(--base-color-100);
+  margin-left: 80px;
+
+  @include sm {
+    width: 335px;
+    height: 823px;
+    margin-left: 40px;
+  }
+}
+
+.book-of-the-week-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 70px;
+  padding-top: 75px;
+
+  @include sm {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.book-of-the-week-card-writer {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+.book-of-the-week-card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+
+  @include sm {
+    font-size: 2rem;
+  }
+}
+
+.hr-container {
+  margin-top: 24px;
+  .card-separator {
+    width: 424px;
+    height: 2px;
+    background-color: var(--base-color-200);
+    color: var(--base-color-200);
+    border: none;
+    margin-left: 70px;
+
+    @include sm {
+      width: 250px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.book-of-the-week-card-published {
+  display: flex;
+  gap: 120px;
+
+  @include sm {
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .book-of-the-week-originally-published {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    margin-left: 70px;
+
+    @include sm {
+      margin-left: 20px;
+    }
+  }
+
+  .originally-published {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 120%;
+    color: var(--base-color-500);
+  }
+
+  .original-date {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  .book-of-the-week-original-publisher {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+
+    @include sm {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .original-publisher {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 120%;
+      color: var(--base-color-500);
+    }
+
+    .original-company {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 1.125rem;
+      line-height: 120%;
+    }
+  }
+}
+
+.book-of-the-week-categories {
+  margin-top: 24px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include sm {
+    margin-left: 20px;
+  }
+
+  .book-of-the-week-category {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 120%;
+    color: var(--base-color-500);
+  }
+
+  .book-categories {
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+  }
+}
+
+.get-book-container {
+  display: flex;
+  gap: 22px;
+  margin-top: 90px;
+  margin-left: 70px;
+
+  @include sm {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .bookmark-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .get-book-button {
+    width: 202px;
+    height: 41px;
+    background-color: var(--base-color-800);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.book-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.book-of-the-week-image-container {
+  margin-top: 60px;
+  margin-left: -150px;
+
+  @include sm {
+    margin-top: -250px;
+    margin-left: 0px;
+  }
+
+  .book-of-the-week-image {
+    @include md {
+      width: 302px;
+      height: 450px;
+    }
+  }
+}
+
+.image-quote {
+  color: var(--base-color-300);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+
+  @include sm {
+    color: var(--base-color-300);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+}
+
+.image-separator {
+  width: 90px;
+  height: 4px;
+  background-color: var(--base-color-600);
+  color: var(--base-color-600);
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
