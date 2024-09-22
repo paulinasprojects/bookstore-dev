@@ -1,0 +1,32 @@
+@import "./responsive.scss";
+
+.all-books-container {
+  margin-top: 82px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @include md {
+    gap: 15px;
+  }
+
+  @include sm {
+    margin-left: 60px;
+    flex-direction: column;
+    gap: 65px;
+  }
+}
+
+@include md {
+  .new-book-card-container:last-child {
+    display: none;
+  }
+}
+
+.all-books {
+  width: 210px;
+  height: 276px;
+  margin-left: 25px;
+}

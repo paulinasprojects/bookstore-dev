@@ -4,17 +4,18 @@ interface NewBookCardProps {
   bookImage: string;
   bookTitle: string;
   bookWriter: string;
+  itsAllBooks?: boolean;
   discountPrice: string | undefined;
   bookPrice: string | undefined;
 }
 
 
-const NewBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice}: NewBookCardProps) => {
+const NewBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice, itsAllBooks}: NewBookCardProps) => {
   return (
-    <div className=''>
-    <div className="book-card">
+    <div className='new-book-card-container'>
+    <div className={itsAllBooks ? "all-books-card" : "book-card"}>
       <div className='book-card-title-container'>
-        <img src={bookImage} alt="" className='book-image' />
+        <img src={bookImage} alt="" className={itsAllBooks ? "all-books" : "book-image"} />
         <span className='subtitle-1 book-title'>{bookTitle}</span>
         <hr className='book-separator'/>
       </div>

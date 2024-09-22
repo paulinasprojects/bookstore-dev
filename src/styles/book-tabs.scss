@@ -1,0 +1,13 @@
+@import "./responsive.scss";
+
+.book-tabs-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+
+  @include sm {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./responsive.scss";
+
+.is-active {
+  border-bottom: 4px solid #000;
+  padding-bottom: 16px;
+  border-radius: 2px;
+  // text-decoration: underline;
+  // text-underline-position: under;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.tab-container {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: var(--base-color-500);
+}
