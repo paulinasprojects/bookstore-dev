@@ -1,0 +1,124 @@
+@import "./responsive.scss";
+
+
+.newsletter-container {
+  background-color: var(--base-color-100);
+}
+
+.newsletter-title-container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include sm {
+    margin-left: 40px;
+  }
+}
+
+.newsletter-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.newsletter-description {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--base-color-600);
+  font-family: "Poppins", sans-serif;
+}
+
+.newsletter-button-container {
+  margin-top: 32px;
+  margin-bottom: 42px;
+  display: flex;
+  gap: 24px;
+}
+
+.newsletter-google-play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 356px;
+  height: 41px;
+  background-color: var(--base-color-800);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include sm {
+    width: 163px;
+    height: 41px;
+  }
+}
+
+.newsletter-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.newsletter-app-store-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 356px;
+  height: 41px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--white);
+  color: var(--base-color-800);
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include sm {
+    width: 163px;
+    height: 41px;
+  }
+}
+
+.newsletter-input-container {
+  display: flex;
+  gap: 25px;
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.newsletter-input {
+  width: 500px;
+  height: 56px;
+  padding: 20px;
+  border-radius: 4px;
+  color: var(--base-color-300);
+  outline: none;
+
+  @include sm {
+    width: 300px;
+  }
+}
+
+.newsletter-send-button {
+  width: 235px;
+  height: 56px;
+  text-transform: uppercase;
+  background-color: var(--base-color-800);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+
+}
