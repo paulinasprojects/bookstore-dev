@@ -82,5 +82,8 @@
 
   .discount-price {
     color: var(--information-red-color-400);
+    @include sm {
+      display: none;
+    }
   }
 }

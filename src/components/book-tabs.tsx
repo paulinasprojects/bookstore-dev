@@ -2,7 +2,14 @@ import {useState} from 'react';
 import Tabs from '@/components/tabs';
 import BookContent from '@/components/book-content';
 import AllBooks from './all-books';
+import FictionBooks from './fiction-books';
+import LiteratureBooks from './literature-books';
 import "@/styles/book-tabs.scss";
+import MysteryBooks from './mystery-books';
+import FantasyBooks from './fantasy-books';
+import HorrorBooks from './horror-books';
+import ActionBooks from './action-books';
+import ClassicsBooks from './classics-books';
 
 const BookTabs = () => {
   const [toggle, setToggle] = useState(1);
@@ -12,19 +19,19 @@ const BookTabs = () => {
       case 1:
         return <AllBooks/>;
       case 2:
-        return <AllBooks/>;
+        return <FictionBooks/>;
       case 3:
-        return <AllBooks/>;
+        return <LiteratureBooks/>;
       case 4:
-        return <AllBooks/>;
+        return <MysteryBooks/>;
       case 5:
-        return <AllBooks/>;
+        return <FantasyBooks/>;
       case 6:
-        return <AllBooks/>;
+        return <HorrorBooks/>;
       case 7:
-        return <AllBooks/>;
+        return <ActionBooks/>;
       case 8:
-        return <AllBooks/>;
+        return <ClassicsBooks/>;
       default:
         return null;
     }
@@ -49,27 +56,27 @@ const BookTabs = () => {
           onClick={() => setToggle(3)}
         />
         <Tabs
-          categoryName='Non Fiction'
+          categoryName='Mystery'
           isActive={toggle === 4}
           onClick={() => setToggle(4)}
         />
         <Tabs
-          categoryName='Realism'
+          categoryName='Fantasy'
           isActive={toggle === 5}
           onClick={() => setToggle(5)}
         />
         <Tabs
-          categoryName='School'
+          categoryName='Horror'
           isActive={toggle === 6}
           onClick={() => setToggle(6)}
         />
         <Tabs
-          categoryName='Magazine'
+          categoryName='Action'
           isActive={toggle === 7}
           onClick={() => setToggle(7)}
         />
         <Tabs
-          categoryName='Ebook'
+          categoryName='Classics'
           isActive={toggle === 8}
           onClick={() => setToggle(8)}
         />
