@@ -1,0 +1,77 @@
+@import "./responsive.scss";
+
+.sign-up-modal-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @include md {
+    gap: 24px;
+  }
+}
+
+
+.sign-up-logo-button-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 80px;
+  gap: 420px;
+  background-color: var(--base-color-100);
+  width: 708px;
+  height: 1024px;
+  flex: 1;
+
+  @include md {
+   width: 500px;
+   height: 848px;
+   padding-left: 15px;
+   flex: 2;
+  }
+
+  @include sm {
+    display: none;
+  }
+}
+
+.white-logo {
+  width: 190px;
+  height: 32px;
+}
+
+.sign-up-modal-title-container {
+  display: flex;
+  flex-direction: column;
+
+
+  .sign-up-login-modal-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 120%;
+    color: var(--base-color-800);
+    padding-bottom: 24px;
+  }
+
+  .sign-up-login-modal-description {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--base-color-600);
+
+    @include md {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.terms-and-services-button{
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 120%;
+  color: var(--base-color-800);
+}
