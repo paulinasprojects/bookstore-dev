@@ -14,6 +14,7 @@
   justify-content: center;
 
   @include sm {
+    padding-top: 40px;
     margin-left: 40px;
   }
 }
@@ -24,6 +25,13 @@
   font-size: 4rem;
   line-height: 120%;
   margin-bottom: 16px;
+
+  @include sm {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 120%;
+  }
 }
 
 .newsletter-description {
@@ -38,6 +46,10 @@
   margin-bottom: 42px;
   display: flex;
   gap: 24px;
+
+  @include sm {
+    margin-right: 20px;
+  }
 }
 
 .newsletter-google-play-button {
@@ -94,6 +106,7 @@
   @include sm {
     flex-direction: column;
     align-items: center;
+    margin-right: 25px;
   }
 }
 
@@ -102,7 +115,7 @@
   height: 56px;
   padding: 20px;
   border-radius: 4px;
-  color: var(--base-color-300);
+  color: var(--base-color-500);
   outline: none;
 
   @include sm {
@@ -113,6 +126,7 @@
 .newsletter-send-button {
   width: 235px;
   height: 56px;
+  border-radius: 4px;
   text-transform: uppercase;
   background-color: var(--base-color-800);
   color: var(--white);
