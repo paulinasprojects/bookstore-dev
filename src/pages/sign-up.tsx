@@ -1,25 +1,22 @@
-
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { FaGoogle, FaFacebookF} from "react-icons/fa";
-import "@/styles/modal.scss";
-import "@/styles/sign-up.scss"
-
 import logo from "/bookstore-v2-logo.svg";
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+
+import "@/styles/sign-up.scss"
 
 const SignUpPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const navigate = useNavigate();
  
-  const toggleModal = () => {
+  const toggleClose = () => {
    setOpenModal(!openModal);
-   navigate("/")
-  }
-
+   navigate("/");
+  };
 
   return (
-    <> 
+
     <div className="sign-up-modal-background">
       <div className="sign-up-logo-button-container">
         <img src={logo} alt=""  className="white-logo"/>
@@ -30,7 +27,7 @@ const SignUpPage = () => {
       </div>
       <div className="right-container">
         <div className="login-modal-close-button-container">
-          <IoIosCloseCircleOutline onClick={toggleModal} className="login-modal-close-button"/>
+          <IoIosCloseCircleOutline onClick={toggleClose} className="login-modal-close-button"/>
         </div>
         <div className="login-modal-input-container">
           <div>
@@ -64,7 +61,6 @@ const SignUpPage = () => {
         </div>
       </div>
     </div>
-    </>
   )
 }
 

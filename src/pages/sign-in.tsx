@@ -1,24 +1,19 @@
-
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import { FaGoogle, FaFacebookF} from "react-icons/fa";
-import "@/styles/modal.scss";
-
-import whiteLogo from "/white-logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { FaGoogle, FaFacebookF} from "react-icons/fa";
+import whiteLogo from "/white-logo.png";
 
-
-
+import "@/styles/modal.scss";
 
 const SignInPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const navigate = useNavigate();
  
-  const toggleModal = () => {
+  const toggleClose = () => {
    setOpenModal(!openModal);
-   navigate("/")
-  }
-
+   navigate("/");
+  };
 
   return (
     <div className="modal-background">
@@ -31,7 +26,7 @@ const SignInPage = () => {
       </div>
       <div className="right-container">
         <div className="login-modal-close-button-container">
-          <IoIosCloseCircleOutline onClick={toggleModal} className="login-modal-close-button"/>
+          <IoIosCloseCircleOutline onClick={toggleClose} className="login-modal-close-button"/>
         </div>
         <div className="login-modal-input-container">
           <div>

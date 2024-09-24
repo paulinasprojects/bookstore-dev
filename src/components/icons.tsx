@@ -1,0 +1,13 @@
+import { SVGProps } from 'react';
+
+export const ForgotPasswordLock = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M10.0691 7.4167C10.8918 5.0407 13.1491 3.33403 15.8051 3.33403C19.1558 3.3207 21.8838 6.0247 21.8984 9.37537V9.40203V12.2647" stroke="#F37272" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M21.244 28.0019H11.056C8.264 28.0019 6 25.7379 6 22.9446V17.2273C6 14.4339 8.264 12.1699 11.056 12.1699H21.244C24.036 12.1699 26.3 14.4339 26.3 17.2273V22.9446C26.3 25.7379 24.036 28.0019 21.244 28.0019Z" stroke="#F37272" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16.151 18.6035V21.5662" stroke="#F37272" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+    
+    
+  )
+}
