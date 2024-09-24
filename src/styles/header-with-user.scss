@@ -1,0 +1,15 @@
+@import "./responsive.scss";
+
+.header-content-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.notifications-icon {
+  cursor: pointer;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
