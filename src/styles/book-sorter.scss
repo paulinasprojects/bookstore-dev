@@ -1,0 +1,44 @@
+@import "./responsive.scss";
+
+.book-sorter-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.total-books {
+  width: 715px;
+  height: 24px;
+
+  @include md {
+    width: 363px;
+    height: 48px;
+  }
+
+  @include sm {
+    margin-left: 20px;
+  }
+}
+
+.books-page {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include sm {
+    display: none;
+  }
+}
+
+
+.sort-by {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}

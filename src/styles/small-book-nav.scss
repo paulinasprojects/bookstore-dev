@@ -1,0 +1,29 @@
+@import "./responsive.scss";
+
+.small-book-nav-container {
+  display: flex;
+  gap: 24px;
+  padding-left: 40px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--base-color-200);
+  background-color: var(--base-color-100);
+}
+
+.active-nav-item {
+  border-bottom: 4px solid #000;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.nav-item {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: var(--base-color-500);
+}

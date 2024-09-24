@@ -2,11 +2,13 @@ import { Navigate, Route, Routes } from "react-router-dom"
 import HomePage from "./pages/home-page"
 import SignUpPage from "./pages/sign-up"
 import SignInPage from "./pages/sign-in"
-import MainLayout from "./components/layouts/main-layout"
+import MainLayout from "@/components/layouts/main-layout"
+import LayoutWithUser from "@/components/layouts/layout-with-user"
 import ForgotPassword from "./pages/forgot-password"
 import ForgotPasswordStep2 from "./pages/forgot-password-step-2"
 import ForgotPasswordStep3 from "./pages/forgot-password-step-3"
 import ForgotPasswordStep4 from "./pages/forgot-password-step-4"
+import DiscoverPage from "./pages/discover-page"
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
     <Route path="/forgot-password/step-2" element={<ForgotPasswordStep2/>}/>
     <Route path="/forgot-password/step-3" element={<ForgotPasswordStep3/>}/>
     <Route path="/forgot-password/step-4" element={<ForgotPasswordStep4/>}/>
+    <Route path="/discover" element={<LayoutWithUser><DiscoverPage/></LayoutWithUser>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>
   )

@@ -37,3 +37,23 @@ export const CheckCircle = (props: SVGProps<SVGSVGElement>) => {
     </svg>   
   )
 }
+
+export const NotificationIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M11.5008 21.7871V21.5681C11.533 20.9202 11.7406 20.2925 12.1024 19.7496C12.7045 19.0975 13.1167 18.2983 13.2957 17.436C13.2957 16.7695 13.2957 16.0935 13.3539 15.427C13.6547 12.2184 16.8273 10 19.9611 10H20.0387C23.1725 10 26.345 12.2184 26.6555 15.427C26.7137 16.0935 26.6555 16.7695 26.704 17.436C26.8854 18.3003 27.2972 19.1019 27.8974 19.7591C28.2618 20.2972 28.4698 20.9227 28.4989 21.5681V21.7776C28.5206 22.648 28.2208 23.4968 27.6548 24.1674C26.907 24.9515 25.8921 25.4393 24.8024 25.5384C21.607 25.8812 18.383 25.8812 15.1876 25.5384C14.0991 25.435 13.0858 24.9479 12.3352 24.1674C11.778 23.4963 11.4822 22.6526 11.5008 21.7871Z" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17.5547 28.8516C18.054 29.4782 18.7871 29.8838 19.592 29.9785C20.3968 30.0732 21.2069 29.8493 21.843 29.3562C22.0387 29.2103 22.2147 29.0408 22.3669 28.8516" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg> 
+  )
+}
+
+export const CartIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M7.42416 19.8203C7.84616 19.8203 8.18916 20.1633 8.18916 20.5853C8.18916 21.0073 7.84616 21.3493 7.42416 21.3493C7.00216 21.3493 6.66016 21.0073 6.66016 20.5853C6.66016 20.1633 7.00216 19.8203 7.42416 19.8203Z" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path fillRule="evenodd" clipRule="evenodd" d="M18.6752 19.8203C19.0972 19.8203 19.4402 20.1633 19.4402 20.5853C19.4402 21.0073 19.0972 21.3493 18.6752 21.3493C18.2532 21.3493 17.9102 21.0073 17.9102 20.5853C17.9102 20.1633 18.2532 19.8203 18.6752 19.8203Z" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2.75 3.25L4.83 3.61L5.793 15.083C5.871 16.018 6.652 16.736 7.59 16.736H18.502C19.398 16.736 20.158 16.078 20.287 15.19L21.236 8.632C21.353 7.823 20.726 7.099 19.909 7.099H5.164" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M14.125 10.7949H16.898" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+}

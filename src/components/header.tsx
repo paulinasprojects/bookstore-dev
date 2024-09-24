@@ -20,7 +20,7 @@ const Header = () => {
       </div>
         <div className="header-button-container">
           <Link to="/"><img src={smallLogo} alt="" className="small-logo" /></Link>
-          <Link to="/" className="discover-button">Discover</Link>
+          <Link to="/discover" className="discover-button">Discover</Link>
           <Link to="/sign-in" className="login-button">Login</Link>
         </div>
     </nav>

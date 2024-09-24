@@ -43,6 +43,15 @@ import janeEyre from "/jane-eyre.jpg";
 import macbeth from "/macbeth.jpg";
 import theHobbit from "/the-hobbit.jpg";
 
+import choochoo from "/choo-choo-stories.png";
+import sutradara from "/sutradara.png";
+import remedies from "/remedies.png";
+import lyricsBook from "/lyrics-book.png";
+import convenienceStore from "/convenience-store.png";
+import theAlchemist from "/the-alchemist.png";
+import miraclesBook from "/the-miracles-book.png";
+import picturesDorianGray from "/pictures-dorian-gray.png";
+
 export const newBooksData = [
   {
     bookImage: newbookOne,
@@ -320,5 +329,80 @@ export const recommendationClassicsBooks = [
     bookWriter: "William Sh.",
     discountPrice: "$9.99",
     bookPrice: "$2.99",
+  },
+];
+export const recommendationDiscoverBooks = [
+  {
+    bookImage: choochoo,
+    bookTitle: "The Stories of Choo Choo: You're Not as Alone as You ",
+    bookWriter: "Citra M.",
+    bookPrice: "$19.00",
+    discountPrice: "$23.5",
+  },
+  {
+    bookImage: sutradara,
+    bookTitle: "Sutradara Itu Menghapus Dialog Kita",
+    bookWriter: "Sapardi D.",
+    bookPrice: "$9.9",
+  },
+  {
+    bookImage: lyricsBook,
+    bookTitle: "The Lyrics of Self-Acceptance",
+    bookWriter: "Yuki A.",
+    bookPrice: "$15.0",
+  },
+  {
+    bookImage: remedies,
+    bookTitle: "Remedies For The Broken",
+    bookWriter: "Leony J.",
+    bookPrice: "$19.0",
+  },
+  {
+    bookImage: convenienceStore,
+    bookTitle: "Convenience Store Woman",
+    bookWriter: "Murata S.",
+    bookPrice: "$10.0",
+  },
+  {
+    bookImage: theAlchemist,
+    bookTitle: "The Alchemist",
+    bookWriter: "Paulo C.",
+    bookPrice: "$11.0",
+  },
+  {
+    bookImage: miraclesBook,
+    bookTitle: "The Miracles of the Namiya General Store",
+    bookWriter: "Keigo H.",
+    bookPrice: "$22.0",
+  },
+  {
+    bookImage: picturesDorianGray,
+    bookTitle: "English Classics: The Picture of Dorian Gray",
+    bookWriter: "Oscar W.",
+    bookPrice: "$12.0",
+  },
+  {
+    bookImage: newbookThree,
+    bookTitle: "Funiculi Funicula : Newly Revealed Stories",
+    bookWriter: "Toshikazu",
+    bookPrice: "$19.0",
+  },
+  {
+    bookImage: hungerGames,
+    bookTitle: "The Hunger Games",
+    bookWriter: "Suzanne C.",
+    bookPrice: "$9.99",
+  },
+  {
+    bookImage: divergentBook,
+    bookTitle: "Divergent",
+    bookWriter: "Veronica R.",
+    bookPrice: "$8.49",
+  },
+  {
+    bookImage: mazeRunner,
+    bookTitle: "The Maze Runner",
+    bookWriter: "James D.",
+    bookPrice: "$6.99",
   },
 ];

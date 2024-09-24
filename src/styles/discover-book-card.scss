@@ -46,7 +46,7 @@
   }
 }
 
-.book-price {
+.discover-book-price {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
@@ -96,12 +96,20 @@
   background-color: var(--base-color-200);
   color: var(--base-color-200);
   border: none;
+
+  @include sm {
+    width: 160px;
+  }
 }
 
-.book-card-writer-and-price-container {
+.discover-book-card-writer-and-price-container {
   display: flex;
   gap: 61px;
   margin-top: 8px;
+
+  @include sm {
+    gap: 10px;
+  }
 }
 
 .book-card-writer {
@@ -109,8 +117,27 @@
   flex-direction: column;
   gap: 8px;
 
-  .writer {
+  .discover-writer {
     color: var(--base-color-400);
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  .book-writer {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+
+    @include sm {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 120%;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -120,12 +147,16 @@
   gap: 8px;
   margin-left: 61px;
 
-  .buy-now {
+  .discover-buy-now {
     color: var(--base-color-400);
+
+    @include sm {
+      display: none;
+    }
   }
 }
 
-.book-card-price {
+.discover-book-card-price {
   display: flex;
   align-items: center;
   gap: 8px;

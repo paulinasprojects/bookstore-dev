@@ -1,0 +1,46 @@
+@import "./responsive.scss";
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+}
+
+.pagination-arrows {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.pagination-circle-active {
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--base-color-800);
+  background-color: var(--base-color-800);
+  color: var(--white);
+}
+
+.pagination-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  border: 1.5px solid var(--base-color-800);
+  background-color: var(--white);
+}
+
+.pagination-circle:hover {
+  background-color: var(--base-color-800);
+  color: var(--white);
+}
+
+.pagination-dots {
+font-size: 24px;
+}

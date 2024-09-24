@@ -1,7 +1,6 @@
-import "@/styles/new-book-card.scss";
-import classNames from "@/lib/utils";
+import "@/styles/discover-book-card.scss";
 
-interface NewBookCardProps {
+interface DiscoverBookCardProps {
   bookImage: string;
   bookTitle: string;
   bookWriter: string;
@@ -11,25 +10,25 @@ interface NewBookCardProps {
 }
 
 
-const NewBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice, itsAllBooks}: NewBookCardProps) => {
+const DiscoverBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice, itsAllBooks}: DiscoverBookCardProps) => {
   return (
     <div className='new-book-card-container'>
     <div className={itsAllBooks ? "all-books-card" : "book-card"}>
       <div className='book-card-title-container'>
-        <img src={bookImage} alt="" className={classNames(itsAllBooks ? "all-books" : "book-image", "discover-image")} />
+        <img src={bookImage} alt="" className= "discover-image" />
         <span className='booktitle book-title'>{bookTitle}</span>
         <hr className='book-separator'/>
       </div>
-      <div className='book-card-writer-and-price-container'>
+      <div className='discover-book-card-writer-and-price-container'>
         <div className='book-card-writer'>
-          <span className='subtitle-4 writer'>Writer</span>
-          <span className='subtitle-2'>{bookWriter}</span>
+          <span className='subtitle-4 discover-writer'>Writer</span>
+          <span className='book-writer'>{bookWriter}</span>
         </div>
         <div className='book-card-buy-now'>
-        <span className='subtitle-4 buy-now'>Buy now</span>
-          <div className='book-card-price'>
+        <span className='subtitle-4 discover-buy-now'>Buy now</span>
+          <div className='discover-book-card-price'>
             <span className='subtitle-2-strikes-through discount-price'>{discountPrice}</span>
-            <span className='book-price'>{bookPrice}</span>
+            <span className='discover-book-price'>{bookPrice}</span>
           </div>
         </div>
       </div>
@@ -38,4 +37,4 @@ const NewBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice
   )
 }
 
-export default NewBookCard
+export default DiscoverBookCard
