@@ -12,8 +12,8 @@ const ForgotPassword = () => {
  
   const toggleClose = () => {
    setOpenModal(!openModal);
-   navigate("/")
-  }
+   navigate("/");
+  };
 
 
   return (
@@ -36,7 +36,7 @@ const ForgotPassword = () => {
           <input type="email" placeholder="jeremyzucker@email.com" className="forgot-password-input" />
         </div>
         <div>
-          <button className="send-now-button">Send now</button>
+          <button className="send-now-button" onClick={() => navigate("/forgot-password/step-2")}>Send now</button>
         </div>
       </div>
     </div>
