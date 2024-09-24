@@ -41,7 +41,7 @@ const ForgotPasswordStep3 = () => {
             <input type="password" placeholder="Confirm Password" className="new-password-input" required />
           </div>
           <div className="reset-password-button-container">
-            <button className="reset-password-button" onClick={() => navigate("/forgot-password/step-3")}>Reset Password</button>
+            <button className="reset-password-button" onClick={() => navigate("/forgot-password/step-4")} type="submit">Reset Password</button>
           </div>
           <div className="new-password-resend-container">
           <span>Didn’t receive the email?

@@ -28,3 +28,12 @@ export const NewPassword = (props: SVGProps<SVGSVGElement>) => {
     </svg>     
   )
 }
+
+export const CheckCircle = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M28 14.9029V16.0069C27.9985 18.5946 27.1606 21.1125 25.6112 23.1851C24.0618 25.2576 21.8839 26.7738 19.4024 27.5075C16.9209 28.2412 14.2687 28.1531 11.8414 27.2564C9.41402 26.3596 7.34158 24.7022 5.93315 22.5313C4.52472 20.3605 3.85575 17.7925 4.02601 15.2104C4.19627 12.6283 5.19665 10.1705 6.87794 8.20335C8.55922 6.23625 10.8313 4.86533 13.3554 4.29504C15.8795 3.72476 18.5203 3.98567 20.884 5.03887" stroke="#1EC341" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M25.3333 9.33398L16.2061 18.6673L12 14.3662" stroke="#1EC341" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>   
+  )
+}

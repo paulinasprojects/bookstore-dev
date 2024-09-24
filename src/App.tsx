@@ -6,6 +6,7 @@ import MainLayout from "./components/layouts/main-layout"
 import ForgotPassword from "./pages/forgot-password"
 import ForgotPasswordStep2 from "./pages/forgot-password-step-2"
 import ForgotPasswordStep3 from "./pages/forgot-password-step-3"
+import ForgotPasswordStep4 from "./pages/forgot-password-step-4"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Route path="/forgot-password" element={<ForgotPassword/>}/>
     <Route path="/forgot-password/step-2" element={<ForgotPasswordStep2/>}/>
     <Route path="/forgot-password/step-3" element={<ForgotPasswordStep3/>}/>
+    <Route path="/forgot-password/step-4" element={<ForgotPasswordStep4/>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>
   )
