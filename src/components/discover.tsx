@@ -1,11 +1,15 @@
+import BookSorter from "./book-sorter";
+import { recommendationDiscoverBooks } from "@/data/data";
+import Pagination from "./pagination";
+import DiscoverBookCard from "./discover-book-card";
+import BookDropdownMobile from "./book-dropdown-mobile";
+import emptyStock from '/empty-stock.png';
+
 import "@/styles/discover.scss"
-import BookSorter from "./book-sorter"
-import { recommendationDiscoverBooks } from "@/data/data"
-import Pagination from "./pagination"
-import DiscoverBookCard from "./discover-book-card"
-import BookDropdownMobile from "./book-dropdown-mobile"
 
 const Discover = () => {
+  const hasBooksInStock = false;
+
   return (
     <div className="discover-container">
       <div className="discover-flex-container">
@@ -36,21 +40,40 @@ const Discover = () => {
         {/* Right */}
         <div>
           <BookSorter/>
-        <div className="grid-container">
-          {recommendationDiscoverBooks.map((book) => (
-            <DiscoverBookCard
-              key={book.bookTitle}
-              bookImage={book.bookImage}
-              bookPrice={book.bookPrice}
-              bookTitle={book.bookTitle}
-              bookWriter={book.bookWriter}
-              discountPrice={book.discountPrice}
-            />
-          ))}
-        </div>
-        <div className="discover-pagination-container">
-          <Pagination/>
-        </div>
+          {hasBooksInStock ? (
+            <>
+              <div className="grid-container">
+                {recommendationDiscoverBooks.map((book) => (
+                  <DiscoverBookCard
+                    key={book.bookTitle}
+                    bookImage={book.bookImage}
+                    bookPrice={book.bookPrice}
+                    bookTitle={book.bookTitle}
+                    bookWriter={book.bookWriter}
+                    discountPrice={book.discountPrice}
+                  />
+                ))}
+              </div>
+              <div className="discover-pagination-container">
+                <Pagination/>
+              </div>
+            </>
+          ) : (
+            <>
+             <div className="empty-stock-container">
+              <div className="empty-stock-image-container">
+                <img src={emptyStock} alt="" />
+              </div>
+              <div className="empty-stock-title-container">
+                <span className="empty-stock-title">Oops... empty stock!</span>
+                <span className="empty-stock-description">The book you're looking for is not in stock.</span>
+              </div>
+              <div className="empty-stock-button-container">
+                <button className="empty-stock-button">Start Shopping</button>
+              </div>
+             </div>
+            </>
+          )}
         </div>
       </div>
     </div>
