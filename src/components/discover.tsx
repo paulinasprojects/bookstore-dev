@@ -8,7 +8,7 @@ import emptyStock from '/empty-stock.png';
 import "@/styles/discover.scss"
 
 const Discover = () => {
-  const hasBooksInStock = false;
+  const hasBooksInStock = true;
 
   return (
     <div className="discover-container">

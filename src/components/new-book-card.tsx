@@ -1,5 +1,6 @@
-import "@/styles/new-book-card.scss";
+import { useNavigate } from "react-router-dom";
 import classNames from "@/lib/utils";
+import "@/styles/new-book-card.scss";
 
 interface NewBookCardProps {
   bookImage: string;
@@ -12,8 +13,10 @@ interface NewBookCardProps {
 
 
 const NewBookCard = ({bookImage, bookTitle, bookWriter, discountPrice, bookPrice, itsAllBooks}: NewBookCardProps) => {
+  const navigate = useNavigate();
+
   return (
-    <div className='new-book-card-container'>
+    <div className='new-book-card-container' onClick={() => navigate("/detail/books/1")}>
     <div className={itsAllBooks ? "all-books-card" : "book-card"}>
       <div className='book-card-title-container'>
         <img src={bookImage} alt="" className={classNames(itsAllBooks ? "all-books" : "book-image", "discover-image")} />

@@ -1,5 +1,9 @@
 @import "./responsive.scss";
 
+.new-book-card-container {
+  cursor: pointer;
+}
+
 .book-card-container {
   margin-left: 80px;
   margin-bottom: 80px;

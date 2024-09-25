@@ -1,0 +1,486 @@
+@import "./responsive.scss";
+
+.book-details-flex-container {
+  display: flex;
+  gap: 60px;
+
+  @include md {
+    gap: 40px;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.book-details-images-container {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.book-details-container {
+  background-color: var(--base-color-100);
+  padding-right: 40px;
+  margin-left: 40px;
+  margin-top: 22px;
+
+  @include sm {
+    margin-left: 15px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+.images-container {
+  display: flex;
+  gap: 23px;
+
+
+  @include md {
+  flex-direction: column;
+  }
+}
+
+.first-image-container {
+  padding-left: 40px;
+  padding-top: 85px;
+  padding-bottom: 65px;
+
+  @include md {
+    padding-bottom: 0;
+  }
+
+  @include sm {
+    padding-left: 20px;
+  }
+}
+
+.second-image-container {
+  padding-top: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+
+  @include md {
+    padding-top: 0;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+}
+.image-1 {
+   width: 430px;
+   height: 528px; 
+   cursor: pointer;
+
+   @include md {
+    width: 347px;
+    height: 425px;
+   }
+
+   @include sm {
+    width: 335px;
+    height: 424px;
+   }
+}
+
+.image-2 {
+  width: 133px;
+  height: 190px;
+  cursor: pointer;
+
+  @include md {
+    width: 102px;
+    height: 110px;
+  }
+}
+
+.image-3 {
+  width: 133px;
+  height: 190px;
+  cursor: pointer;
+
+  @include md {
+    width: 102px;
+    height: 110px;
+  }
+}
+
+.image-4 {
+  width: 133px;
+  height: 190px;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+  @include md {
+    width: 102px;
+    height: 110px;
+  }
+}
+
+
+.book-details-summary-container {
+  margin-top: 40px;
+  margin-left: 40px;
+  
+  @include sm {
+    margin-left: 20px;
+  }
+}
+
+.book-details-books-summary-container {
+  margin-top: 40px;
+  margin-left: 40px;
+
+  @include sm {
+    margin-left: 20px;
+  }
+}
+
+.book-details-button-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.book-details-get-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 202px;
+  height: 41px;
+  background-color: var(--base-color-800);
+  color: var(--base-color-100);
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+
+  @include sm {
+    width: 159px;
+  }
+}
+
+.book-details-buy-now {
+  width: 202px;
+  height: 41px;
+  border-radius: 4px;
+  border: 1.5px solid var(--base-color-800);
+  background-color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  
+  @include sm {
+    width: 159px;
+  }
+}
+
+.book-summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.book-summary-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.book-summary-description {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+
+  @include md {
+    font-size: 16px;
+  }
+}
+
+.summary-last-paragraph-container{
+  margin-top: 15px;
+
+  .summary-last-paragraph {
+    font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  }
+}
+
+.book-details-reviews-container {
+  margin-top: 40px;
+}
+
+.book-details-review-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+
+  @include sm {
+    margin-left: 20px;
+    padding: 5px;
+  }
+}
+
+.reviews-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.reviews-see-all {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.test-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
+  margin-left: 40px;
+
+  .review-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  @include sm {
+    margin-left: 15px;
+  }
+}
+
+.test-container-2 {
+  display: flex;
+  flex-direction: column;
+
+  .test-span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 120%;
+  }
+
+  .span-title {
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 120%;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  }
+
+  .span-description {
+    font-size: 16px;
+  }
+}
+
+.book-details-right-container {
+  margin-top: 23px;
+
+  @include sm {
+    margin-left: 10px;
+  }
+}
+
+.book-details-title-share-container {
+  display: flex;
+  align-items: center;
+  gap: 500px;
+
+  @include sm {
+    gap: 50px;
+  }
+}
+
+.book-details-writer {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: var(--base-color-500);
+  white-space: nowrap;
+}
+
+.book-details-title-container {
+  margin-top: 14px;
+}
+
+.book-details-book-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+
+  @include md {
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+  }
+
+  @include sm {
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 120%;
+  }
+}
+
+.book-details-price-container {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+  @include md {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.book-details-price-discount {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+  text-decoration: line-through;
+  color: var(--information-red-color-400);
+}
+
+.book-details-book-price {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.book-details-hr-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.book-details-hr {
+  width: 644px;
+  height: 2px;
+  color: var(--base-color-200);
+  background-color: var(--base-color-200);
+  border: none;
+
+  @include md {
+    width: 461px;
+  }
+
+  @include sm {
+    width: 335px;
+  }
+}
+
+.grid-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 207px);
+  gap: 24px;
+
+  @include md {
+    grid-template-columns: repeat(3, 137px); 
+  }
+
+  @include sm {
+    grid-template-columns: repeat(3, 98px); 
+    gap: 40px;
+  }
+}
+
+.flex-col-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-details-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: var(--base-color-500);
+}
+
+.book-details-description {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: var(--base-color-700);
+}
+
+.book-details-description-big {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+
+  @include sm {
+    font-size: 1.5rem;
+  }
+}
+
+.book-details-description:last-child {
+  white-space: nowrap;
+
+  @include md {
+    font-size: 14px;
+  }
+
+  @include sm {
+    font-size: 12px;
+  }
+}
+
+.second-grid-item-container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 24px;
+
+  @include md {
+    grid-template-columns: repeat(3, 137px); 
+  }
+}
+
+.book-details-books-container {
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.book-details-new-books {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}

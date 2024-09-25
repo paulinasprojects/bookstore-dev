@@ -1,56 +1,49 @@
-import newbookOne from "/new-book.png";
-import newbookTwo from "/new-book-two.png";
-import newbookThree from "/new-book-three.png";
-import newbookFour from "/new-book-four.png";
-
-import paintBook from "/paint-book.png";
-import lautBercerita from "/laut-bercerita.png";
-import harryPotterBook from "/harry-potter.png";
-import matahariBook from "/matahari-book.png";
-
-import burnBook from "/burn-book.jpg";
-import godOfWoods from "/god-of-the-woods.jpg";
-import itEndsBook from "/it-ends-book.jpg";
-import societyOfLies from "/society-of-lies.jpg";
-
-import catcherBook from "/catcher-in-the-rye.jpg";
-import book1984 from "/book-1984.jpg";
-import greatGatsby from "/great-gatsby.jpg";
-import mockingbirdBook from "/mockingbird-book.jpg";
-
-import poisonGarden from "/poision-garden.jpg";
-import silentPatient from "/silent-patient.jpg";
-import flickerInTheDark from "/flicker-in-the-dark.jpg";
-import theMaid from "/the-maid.jpg";
-
-import fairyTale from "/fairy-tale.jpg";
-import lightlark from "/lightlark.jpg";
-import powerlessBook from "/powerless.jpg";
-import queenOfNothing from "/queen-of-nothing.jpg";
-
-import hiddenPictures from "/hidden-pictures.jpg";
-import salemLot from "/salem-lot.jpg";
-import theShining from "/the-shining.jpg";
-import wardDBook from "/ward-d.jpg";
-
-import divergentBook from "/divergent.jpg";
-import hungerGames from "/hunger-games.jpg";
-import lightningThief from "/lightning-thief.jpg";
-import mazeRunner from "/maze-runner.jpg";
-
-import dorianGray from "/dorian-gray.jpg";
-import janeEyre from "/jane-eyre.jpg";
-import macbeth from "/macbeth.jpg";
-import theHobbit from "/the-hobbit.jpg";
-
-import choochoo from "/choo-choo-stories.png";
-import sutradara from "/sutradara.png";
-import remedies from "/remedies.png";
-import lyricsBook from "/lyrics-book.png";
-import convenienceStore from "/convenience-store.png";
-import theAlchemist from "/the-alchemist.png";
-import miraclesBook from "/the-miracles-book.png";
-import picturesDorianGray from "/pictures-dorian-gray.png";
+import {
+  newbookOne,
+  newbookTwo,
+  newbookThree,
+  newbookFour,
+  paintBook,
+  lautBercerita,
+  harryPotterBook,
+  matahariBook,
+  itEndsBook,
+  societyOfLies,
+  burnBook,
+  godOfWoods,
+  catcherBook,
+  greatGatsby,
+  book1984,
+  mockingbirdBook,
+  flickerInTheDark,
+  silentPatient,
+  theMaid,
+  poisonGarden,
+  fairyTale,
+  lightlark,
+  powerlessBook,
+  queenOfNothing,
+  theShining,
+  wardDBook,
+  hiddenPictures,
+  salemLot,
+  hungerGames,
+  divergentBook,
+  mazeRunner,
+  lightningThief,
+  theHobbit,
+  janeEyre,
+  dorianGray,
+  macbeth,
+  choochoo,
+  sutradara,
+  lyricsBook,
+  remedies,
+  convenienceStore,
+  theAlchemist,
+  miraclesBook,
+  picturesDorianGray,
+} from "@/components/images";
 
 export const newBooksData = [
   {
@@ -404,5 +397,72 @@ export const recommendationDiscoverBooks = [
     bookTitle: "The Maze Runner",
     bookWriter: "James D.",
     bookPrice: "$6.99",
+  },
+];
+
+export const BookDetailsNewBooksData = [
+  {
+    bookImage: newbookOne,
+    bookTitle: "English Classics: The Island Of Doctor Moreau",
+    bookWriter: "H.g. Wells",
+    discountPrice: "$23.5",
+    bookPrice: "$19.0",
+  },
+  {
+    bookImage: newbookThree,
+    bookTitle: "Funiculi Funicula : Newly Revealed Stories",
+    bookWriter: "Toshikazu",
+    bookPrice: "$19.0",
+  },
+  {
+    bookImage: newbookTwo,
+    bookTitle: "Sagaras",
+    bookWriter: "Tere Liye",
+    bookPrice: "$19.0",
+  },
+  {
+    bookImage: newbookFour,
+    bookTitle: "We Go Today",
+    bookWriter: "Ziggy",
+    bookPrice: "$19.0",
+  },
+];
+
+export const GridItemsData = [
+  {
+    id: 1,
+    title: "Originally published",
+    description: "2018, 13 August",
+  },
+  {
+    id: 2,
+    title: "Publisher",
+    description: "Shin Publishing",
+  },
+  {
+    id: 3,
+    title: "Language",
+    description: "English",
+  },
+  {
+    id: 4,
+    title: "ISBN",
+    description: "9786020385099",
+  },
+  {
+    id: 5,
+    title: "Number of pages",
+    description: "145",
+  },
+  {
+    id: 6,
+    title: "Weight",
+    description: "0.25 kg",
+  },
+  {
+    id: 7,
+    title: "Categories",
+    description:
+      "Fictional, Magical Realism, Asian Literature, Domestic Fiction",
   },
 ];

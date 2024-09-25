@@ -1,0 +1,43 @@
+@import "./responsive.scss";
+
+.add-product-counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 207px;
+  height: 44px;
+  border: 1px solid var(--base-color-200);
+  border-radius: 4px;
+
+  @include sm {
+    width: 98px;
+    height: 44px;
+  }
+}
+
+.minus-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.counter-number {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 120%;
+
+  @include sm {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
+}
+
+.plus-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
