@@ -88,6 +88,10 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--base-color-800);
+
+  @include sm {
+    display: none;
+  }
 }
 
 .login-button {

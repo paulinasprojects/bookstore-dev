@@ -43,6 +43,12 @@ import {
   theAlchemist,
   miraclesBook,
   picturesDorianGray,
+  cartImage,
+  cartImage2,
+  cartImage3,
+  cartImage4,
+  cartImage5,
+  cartImage6,
 } from "@/components/images";
 
 export const newBooksData = [
@@ -464,5 +470,50 @@ export const GridItemsData = [
     title: "Categories",
     description:
       "Fictional, Magical Realism, Asian Literature, Domestic Fiction",
+  },
+];
+
+export const CartItems = [
+  {
+    id: 1,
+    cardTitle: "Jika Kucing Lenyap Dari Dunia",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage,
+  },
+  {
+    id: 2,
+    cardTitle: "Keigo Higashino",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage2,
+  },
+  {
+    id: 3,
+    cardTitle: "The Stories of Choo Choo",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage3,
+  },
+  {
+    id: 4,
+    cardTitle: "The Silent Patient",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage4,
+  },
+  {
+    id: 5,
+    cardTitle: "Anne Of Green Gables (Republish 2022)",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage5,
+  },
+  {
+    id: 6,
+    cardTitle: "The Guardians",
+    cardQuantity: "1 book x $19.0",
+    cardInStock: "Stock 14",
+    cardImage: cartImage6,
   },
 ];

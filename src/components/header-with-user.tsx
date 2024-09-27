@@ -6,7 +6,11 @@ import profilePic from '/profile-pic-small.png';
 
 import "@/styles/header-with-user.scss";
 
-const HeaderWithUser = () => {
+interface HeaderWithUserProps {
+  isNotificationsPage?: boolean;
+}
+
+const HeaderWithUser = ({isNotificationsPage}: HeaderWithUserProps) => {
 
   return (
     <>
@@ -18,6 +22,11 @@ const HeaderWithUser = () => {
         <BiSearch className="search-icon"/>
         <input type="text" placeholder="What book are you looking for?" className="header-input" />
       </div>
+      {isNotificationsPage && (
+        <div>
+          <Link to="/discover" className="discover-button">Discover</Link>
+        </div>
+      )}
       <div className="header-content-container">
         <div>
           <Link to="/notifications">

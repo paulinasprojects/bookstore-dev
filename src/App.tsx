@@ -10,6 +10,9 @@ import ForgotPasswordStep3 from "./pages/forgot-password-step-3"
 import ForgotPasswordStep4 from "./pages/forgot-password-step-4"
 import DiscoverPage from "./pages/discover-page"
 import BookDetailsPage from "./pages/book-details-page"
+import NotificationsPage from "./pages/notifications-page"
+import LayoutWithDiscover from "./components/layouts/layout-with-discover"
+import CartPage from "./pages/cart-page"
 
 const App = () => {
   return (
@@ -22,6 +25,8 @@ const App = () => {
     <Route path="/forgot-password/step-3" element={<ForgotPasswordStep3/>}/>
     <Route path="/forgot-password/step-4" element={<ForgotPasswordStep4/>}/>
     <Route path="/discover" element={<LayoutWithUser><DiscoverPage/></LayoutWithUser>}/>
+    <Route path="/notifications" element={<LayoutWithDiscover><NotificationsPage/></LayoutWithDiscover>}/>
+    <Route path="/cart" element={<LayoutWithDiscover><CartPage/></LayoutWithDiscover>}/>
     <Route path="/detail/books/:bookId" element={<LayoutWithUser><BookDetailsPage/></LayoutWithUser>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>

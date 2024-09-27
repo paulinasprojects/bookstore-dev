@@ -59,6 +59,12 @@ import convenienceStore from "/convenience-store.png";
 import theAlchemist from "/the-alchemist.png";
 import miraclesBook from "/the-miracles-book.png";
 import picturesDorianGray from "/pictures-dorian-gray.png";
+import cartImage from "/cart-image.png";
+import cartImage2 from "/cart-image-two.png";
+import cartImage3 from "/cart-image-three.png";
+import cartImage4 from "/cart-image-four.png";
+import cartImage5 from "/cart-image-five.png";
+import cartImage6 from "/cart-image-six.png";
 
 export {
   sneakPeak1,
@@ -112,4 +118,10 @@ export {
   theMaid,
   theShining,
   wardDBook,
+  cartImage,
+  cartImage2,
+  cartImage3,
+  cartImage4,
+  cartImage5,
+  cartImage6,
 };
