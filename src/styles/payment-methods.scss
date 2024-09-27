@@ -1,0 +1,85 @@
+@import "./responsive.scss";
+
+@import "@react-aria/example-theme";
+
+.react-aria-RadioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--base-color-800);
+}
+
+.react-aria-Radio {
+  display: flex;
+  align-items: center;
+  gap: 0.571rem;
+  font-size: 1.143rem;
+  color: var(--base-color-800);
+  forced-color-adjust: none;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 1.286rem;
+    height: 1.286rem;
+    box-sizing: border-box;
+    border: 0.143rem solid var(--base-color-800);
+    background: var(--white);
+    border-radius: 1.286rem;
+    transition: all 200ms;
+  }
+
+  &[data-pressed]:before {
+    border-color: var(--border-color-pressed);
+  }
+
+  &[data-selected] {
+    &:before {
+      border-color: var(--highlight-background);
+      border-width: 0.429rem;
+    }
+
+    &[data-pressed]:before {
+      border-color: var(--highlight-background-pressed);
+    }
+  }
+
+  &[data-focus-visible]:before {
+    outline: 2px solid var(--focus-ring-color);
+    outline-offset: 2px;
+  }
+}
+
+.radio-group-container {
+margin-top: 24px;
+}
+
+
+.radio-group-test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 15px;
+
+  .cash-app-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cash-app-container {
+    display: flex;
+    flex-direction: column;
+
+    .payment-method-title {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 120%;
+
+      .body-text-3 {
+        font-size: 16px;
+      }
+    }
+  }
+}

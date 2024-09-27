@@ -1,0 +1,269 @@
+@import "./responsive.scss";
+
+.checkout-flex-container {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+
+  @include md {
+    margin-left: 20px;
+    gap: 30px;
+  }
+
+  @include sm {
+    margin-left: 20px;
+    justify-content: unset;
+    flex-direction: column;
+  }
+}
+
+.checkout-title-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  .checkout-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+}
+
+.checkout-shipping-address {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.checkout-home-shipping-container {
+  display: flex;
+  gap: 52px;
+
+  @include md {
+    gap: 16px;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkout-home {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  .checkout-description {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.checkout-home-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout-duration-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout-product-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.checkout-right-container {
+  background-color: var(--base-color-100);
+  padding: 20px 30px;
+
+  @include md {
+    padding: 20px 15px;
+  }
+
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.checkout-right-title-container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .checkout-right-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 120%;
+
+    @include md {
+      font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+    }
+  }
+
+  .checkout-right-add-new {
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 600;
+  }
+}
+
+.checkout-summary-container {
+  margin-top: 32px;
+}
+
+.checkout-summary-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .checkout-summary-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  .checkout-summary-book-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+}
+
+.checkout-summary {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .checkout-quantity {
+    font-size: 16px;
+  }
+
+  .checkout-price {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+}
+
+.checkout-summary-second-title-container {
+  margin-top: 16px;
+  .checkout-summary-second-book-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+}
+
+.checkout-hr-container {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .checkout-hr {
+    width: 350px;
+    height: 2px;
+    color: var(--base-color-200);
+    background-color: var(--base-color-200);
+    border: none;
+
+    @include md {
+      width: 274px;
+    }
+  }
+}
+
+.checkout-total-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .total-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .total-price {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+}
+
+.checkout-total-price-container {
+  margin-top: 24px;
+  margin-bottom: 169px;
+  display: flex;
+  flex-direction: column;
+
+  .total-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .total-price-title {
+    font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 120%;
+  }
+}
+
+.checkout-pay-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+
+  .checkout-terms-and-policy {
+    font-size: 16px;
+  }
+
+  .checkout-pay-button {
+    width: 275px;
+    height: 41px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: var(--base-color-800);
+    color: var(--white);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

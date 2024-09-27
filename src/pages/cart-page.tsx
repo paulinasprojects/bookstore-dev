@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { CiDiscount1 } from "react-icons/ci";
 import SellectAllCheckbox from "@/components/checkbox";
@@ -6,6 +7,8 @@ import { CartItems } from "@/data/data";
 import "@/styles/cart.scss";
 
 const CartPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="cart-page-container">
       <div className="cart-flex-container">
@@ -98,7 +101,7 @@ const CartPage = () => {
                 <span className="total-price-title">Total Price</span>
                 <span className="total-price-title">$25.0</span>
               </div>
-                <button className="summary-checkout-button">Checkout (2 items)</button>
+                <button className="summary-checkout-button" onClick={() => navigate("/checkout")}>Checkout (2 items)</button>
             </div>
           </div>
         </div>

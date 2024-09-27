@@ -13,6 +13,7 @@ import BookDetailsPage from "./pages/book-details-page"
 import NotificationsPage from "./pages/notifications-page"
 import LayoutWithDiscover from "./components/layouts/layout-with-discover"
 import CartPage from "./pages/cart-page"
+import CheckoutPage from "./pages/checkout-page"
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
     <Route path="/discover" element={<LayoutWithUser><DiscoverPage/></LayoutWithUser>}/>
     <Route path="/notifications" element={<LayoutWithDiscover><NotificationsPage/></LayoutWithDiscover>}/>
     <Route path="/cart" element={<LayoutWithDiscover><CartPage/></LayoutWithDiscover>}/>
+    <Route path="/checkout" element={<LayoutWithDiscover><CheckoutPage/></LayoutWithDiscover>}/>
     <Route path="/detail/books/:bookId" element={<LayoutWithUser><BookDetailsPage/></LayoutWithUser>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>

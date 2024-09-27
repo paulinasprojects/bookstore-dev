@@ -1,4 +1,5 @@
 import HeaderWithUser from "../header-with-user"
+import Footer from "../footer"
 
 interface LayoutWithDiscoverProps  {
   children: React.ReactNode
@@ -11,6 +12,7 @@ const LayoutWithDiscover = ({ children }: LayoutWithDiscoverProps) => {
       <div className="children-continer">
         {children}
       </div>
+      <Footer/>
     </div>
   )
 }
