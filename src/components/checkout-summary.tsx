@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const CheckoutSummary = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="checkout-summary-container">
     <div className="checkout-summary-title-container">
@@ -41,7 +45,7 @@ const CheckoutSummary = () => {
     </div>
     <div className="checkout-pay-container">
       <span className="checkout-terms-and-policy">By registering, I agree Terms and  <br /> Conditions and Privacy Policy</span>
-      <button className="checkout-pay-button">Pay $25</button>
+      <button className="checkout-pay-button" onClick={() => navigate("/checkout/success")}>Pay $25</button>
     </div>
   </div>
   )

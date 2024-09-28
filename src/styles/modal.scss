@@ -1,214 +1,88 @@
 @import "./responsive.scss";
 
 .modal-background {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100vw;
   height: 100vh;
+  backdrop-filter: blur(5px);
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-
-  @include md {
-    gap: 24px;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
-.logo-button-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  padding-left: 80px;
-  gap: 350px;
-  background-color: var(--base-color-800);
-  width: 708px;
-  height: 1024px;
-  flex: 1;
-
-  @include md {
-   width: 500px;
-   height: 848px;
-   padding-left: 15px;
-   flex: 2;
-  }
-
-  @include sm {
-    display: none;
-  }
+.modal-container {
+  padding: 25px;
+  background-color: var(--white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 4px;
 }
 
-.white-logo {
-  width: 190px;
-  height: 32px;
-}
-
-.login-modal-title-container {
-  display: flex;
-  flex-direction: column;
-
-
-  .login-modal-title {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 120%;
-    color: var(--white);
-    padding-bottom: 24px;
-  }
-
-  .login-modal-description {
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    color: var(--base-color-300);
-
-    @include md {
-      font-size: 16px;
-    }
-  }
-}
-
-.right-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 50px;
-  flex: 1;
-
-  @include md {
-    gap: 0;
-    width: 490px;
-    height: 848px;
-  }
-}
-
-.login-modal-close-button-container {
-  margin-top: 30px;
-  margin-right: 80px;
-
-  @include sm {
-    margin-right: 20px;
-  }
-
-  .login-modal-close-button {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-  }
-}
-
-.login-modal-input-container {
+.modal-title-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-right: 189px;
 
-  @include md {
-    margin-right: 80px;
-    margin-top: 50px;
-  }
-
-  @include sm {
-    margin-right: 10px;
-  }
-
-  .login-modal-input {
-    border-radius: 4px;
-    padding: 20px;
-    border: 2px solid var(--base-color-200);
-    width: 410px;
-    height: 56px;
-  }
-
-  .login-modal-input::placeholder {
-    color: var(--base-color-300);
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .forgot-button-container {
-    margin-left: auto;
-  }
-
-  .forgot-button {
+  .add-new-card-title {
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 120%;
-    color: var(--base-color-800);
   }
+}
 
-  .login-modal-login-button {
-    width: 410px;
-    height: 41px;
+.card-number-input-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .card-number-input {
+    width: 298px;
+    height: 56px;
     border-radius: 4px;
-    background-color: var(--base-color-300);
-    color: var(--base-color-100);
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--base-color-300);
+    font-size: 16px;
+    border: 1px solid var(--base-color-200);
+    outline: none;
   }
+  
+  .error-message {
+    font-size: 14px;
+    color: var(--information-red-color-400);
+  }
+}
 
-  .or-span {
+.modal-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.modal-privacy-policy {
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+
+.modal-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-save-new-card-button {
     text-align: center;
-  }
-
-  .login-modal-social-button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .login-button-social-google {
-    width: 410px;
+    width: 298px;
     height: 41px;
-    color: var(--base-color-100);
-    background-color: #406AE3;
     border-radius: 4px;
-    font-family: "Inter", sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
+    color: var(--white);
+    background-color: var(--base-color-800);
     cursor: pointer;
-  }
-  .login-button-social-facebook {
-    width: 410px;
-    height: 41px;
-    color: var(--base-color-100);
-    background-color: #455991;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
     font-weight: 600;
-    border: none;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .login-button-dont-have-account {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-
-    .sign-up-link {
-      font-weight: 600;
-      color: var(--base-color-800);
-    }
-
-    .sign-up-link:hover {
-      text-decoration: underline;
-    }
   }
 }

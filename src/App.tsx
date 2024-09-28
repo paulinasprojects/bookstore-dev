@@ -14,6 +14,8 @@ import NotificationsPage from "./pages/notifications-page"
 import LayoutWithDiscover from "./components/layouts/layout-with-discover"
 import CartPage from "./pages/cart-page"
 import CheckoutPage from "./pages/checkout-page"
+import CheckoutSuccess from "./pages/checkout-success"
+import CheckoutFailed from "./pages/checkout-failed"
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
     <Route path="/notifications" element={<LayoutWithDiscover><NotificationsPage/></LayoutWithDiscover>}/>
     <Route path="/cart" element={<LayoutWithDiscover><CartPage/></LayoutWithDiscover>}/>
     <Route path="/checkout" element={<LayoutWithDiscover><CheckoutPage/></LayoutWithDiscover>}/>
+    <Route path="/checkout/success" element={<LayoutWithDiscover><CheckoutSuccess/></LayoutWithDiscover>}/>
+    <Route path="/checkout/failed" element={<LayoutWithDiscover><CheckoutFailed/></LayoutWithDiscover>}/>
     <Route path="/detail/books/:bookId" element={<LayoutWithUser><BookDetailsPage/></LayoutWithUser>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>

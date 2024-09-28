@@ -4,7 +4,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { FaGoogle, FaFacebookF} from "react-icons/fa";
 import whiteLogo from "/white-logo.png";
 
-import "@/styles/modal.scss";
+import "@/styles/sign-in.scss";
 
 const SignInPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -16,7 +16,7 @@ const SignInPage = () => {
   };
 
   return (
-    <div className="modal-background">
+    <div className="sign-in-modal-background">
       <div className="logo-button-container">
         <img src={whiteLogo} alt=""  className="white-logo"/>
         <div className="login-modal-title-container">

@@ -1,12 +1,20 @@
+import { useState } from "react";
+import checkoutImage from '/checkout-image.png';
 import CheckoutDropdown from "@/components/checkout-dropdown";
 import CheckoutProductItem from "@/components/checkout-product-item";
 import CheckoutSummary from "@/components/checkout-summary";
 import PaymentMethods from "@/components/payment-methods";
-import checkoutImage from '/checkout-image.png';
 import checkoutImage2 from '/checkout-image-two.png';
+import AddNewCardModal from "@/components/modal";
 import "@/styles/checkout.scss";
 
 const CheckoutPage = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const toggleModal = () => {
+    setOpen(!open);
+  };
+
   return (
     <div>
       <div className="checkout-flex-container">
@@ -55,7 +63,7 @@ const CheckoutPage = () => {
         <div className="checkout-right-container">
             <div className="checkout-right-title-container">
               <span className="checkout-right-title">Payment Method</span>
-              <button className="checkout-right-add-new">Add new</button>
+              <button className="checkout-right-add-new" onClick={() => setOpen(!open)}>Add new</button>
             </div>
             <div>
               <PaymentMethods/>
@@ -64,6 +72,9 @@ const CheckoutPage = () => {
               <CheckoutSummary/>
           </div>
       </div>
+        {open && (
+          <AddNewCardModal setOpen={toggleModal}/>
+        )}
     </div>
   )
 }

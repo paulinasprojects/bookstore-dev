@@ -17,7 +17,7 @@ const ForgotPassword = () => {
 
 
   return (
-    <div className="test-container">
+    <div className="">
       <div className="forgot-password-header-container">
         <img src={logo} alt="" />
         <IoIosCloseCircleOutline className="forgot-password-close-button" onClick={toggleClose}/>
