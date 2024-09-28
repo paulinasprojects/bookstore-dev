@@ -109,6 +109,12 @@
   @include sm {
     margin-right: 10px;
   }
+  
+  .error-message {
+    color: var(--information-red-color-400);
+    font-size: 14px;
+    margin-top: 4px;
+  }
 
   .login-modal-input {
     border-radius: 4px;

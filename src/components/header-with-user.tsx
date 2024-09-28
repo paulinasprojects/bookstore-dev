@@ -33,7 +33,7 @@ const HeaderWithUser = ({isNotificationsPage}: HeaderWithUserProps) => {
       )}
       <div className="header-content-container">
         <div>
-          <Link to="/notifications">
+          <Link to="#">
             <NotificationIcon />
           </Link>
         </div>
