@@ -4,6 +4,7 @@ import { CiDiscount1 } from "react-icons/ci";
 import SellectAllCheckbox from "@/components/checkbox";
 import CartCards from "@/components/cart-cards";
 import { CartItems } from "@/data/data";
+import TotalSummary from "@/components/total-summary";
 import "@/styles/cart.scss";
 
 const CartPage = () => {
@@ -83,18 +84,19 @@ const CartPage = () => {
               <hr  className="summary-hr"/>
             </div>
             <div className="summary-total-container">
-              <div className="flex-row">
-                <span className="total-title">Total</span>
-                <span className="total-price">$31.0</span>
-              </div>
-              <div className="flex-row">
-                <span className="total-title">Delivery</span>
-                <span className="total-price">$5.0</span>
-              </div>
-              <div className="flex-row">
-                <span className="total-title">Voucher</span>
-                <span className="total-price">-$11.0</span>
-              </div>
+              <TotalSummary
+                summaryTitle="Total"
+                summaryPrice="$31.0"
+              />
+              <TotalSummary
+                summaryTitle="Delivery"
+                summaryPrice="$5.0"
+              />
+              
+              <TotalSummary
+                summaryTitle="Voucher"
+                summaryPrice="$11"
+              />
             </div>
             <div className="summary-total-price-container">
               <div className="total-price-container">

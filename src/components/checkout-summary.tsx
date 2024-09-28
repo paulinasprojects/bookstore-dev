@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import TotalSummary from "./total-summary";
 
 const CheckoutSummary = () => {
   const navigate = useNavigate();
@@ -24,18 +25,18 @@ const CheckoutSummary = () => {
       <hr  className="checkout-hr"/>
     </div>
     <div className="checkout-total-container">
-      <div className="flex-row">
-        <span className="total-title">Total</span>
-        <span className="total-price">$31.0</span>
-      </div>
-      <div className="flex-row">
-        <span className="total-title">Delivery</span>
-        <span className="total-price">$5.0</span>
-      </div>
-      <div className="flex-row">
-        <span className="total-title">Voucher</span>
-        <span className="total-price">-$11.0</span>
-      </div>
+      <TotalSummary
+        summaryTitle="Total"
+        summaryPrice="$31.0"
+      />
+        <TotalSummary
+          summaryTitle="Delivery"
+          summaryPrice="$5.0"
+        />     
+      <TotalSummary
+        summaryTitle="Voucher"
+        summaryPrice="$11"
+      />
     </div>
     <div className="checkout-total-price-container">
       <div className="total-price-container">
