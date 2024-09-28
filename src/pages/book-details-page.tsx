@@ -1,4 +1,4 @@
-import { sneakPeak1, sneakpeak2, sneakpeak3, testimage, reviewPic1, reviewPic2, reviewPic3 } from '@/components/images';
+import { sneakPeak1, sneakpeak2, sneakpeak3, testimage, reviewPic1, reviewPic2, reviewPic3 } from '@/data/images';
 import { BookDetailsNewBooksData, GridItemsData } from "@/data/data";
 import { Star, Share, CartIcon } from "@/components/icons";
 import NewBookCard from "@/components/new-book-card";

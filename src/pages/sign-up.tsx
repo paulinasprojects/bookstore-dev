@@ -1,23 +1,18 @@
 import { useState } from "react";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { FaGoogle, FaFacebookF} from "react-icons/fa";
 import logo from "/bookstore-v2-logo.svg";
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import FormInputField from "@/components/form-input-field";
+import { signUpSchema } from "@/lib/schemas";
+import InputField from "@/components/input-field";
 
 import "@/styles/sign-up.scss";
 
-const signUpSchema = z.object({
-  name: z.string().min(3, {message: "Full name is required"}),
-  email: z.string().min(1, {message: "Email is required"}).email({message: "Invalid email address"}),
-  password: z.string().min(8, {message: "Password must be at least 8 characters long."}),
-})
-
 const SignUpPage = () => {
-  const {register, handleSubmit, formState: {errors}} = useForm<z.infer<typeof signUpSchema>>({
+  const { register, reset,  handleSubmit, formState: { errors } } = useForm<z.infer<typeof signUpSchema>>({
     resolver: zodResolver(signUpSchema),
     defaultValues: {
       name: "",
@@ -36,6 +31,7 @@ const SignUpPage = () => {
 
   const onSubmit = async (values: z.infer<typeof signUpSchema>) => {
     console.log(values);
+    reset();
   };
 
 
@@ -56,27 +52,33 @@ const SignUpPage = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
           <div className="login-modal-input-container">
           <div>
-            <FormInputField
+            <InputField
+              className="login-modal-input"
               register={register}
               name="name"
               placeholer="Full Name"
               error={errors.name}
+              type="text"
             />
           </div>
           <div>
-             <FormInputField
+             <InputField
+              className="login-modal-input"
               register={register}
               name="email"
               placeholer="Email Address"
               error={errors.email}
+              type="email"
             />
           </div>
           <div>
-            <FormInputField
+            <InputField
+              className="login-modal-input"
               register={register}
               name="password"
               placeholer="Password"
               error={errors.password}
+              type="password"
             />
           </div>
           <div className="terms-and-services-button-container">

@@ -8,13 +8,14 @@ interface InputFieldProps<T extends FieldValues> {
   defaultValue?: string;
   error?: FieldError;
   inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+  className?: string;
 }
 
-const InputField = <T extends FieldValues> ({ placeholer, type, register, name, defaultValue, error, inputProps }: InputFieldProps<T>) => {
+const InputField = <T extends FieldValues> ({ placeholer, type, register, name, defaultValue, error, inputProps, className }: InputFieldProps<T>) => {
   return (
     <div className=''>
       <input
-        className='card-number-input' 
+        className={className} 
         placeholder={placeholer}
         type={type}
         {...register(name)}

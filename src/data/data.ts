@@ -49,7 +49,7 @@ import {
   cartImage4,
   cartImage5,
   cartImage6,
-} from "@/components/images";
+} from "@/data/images";
 
 export const newBooksData = [
   {

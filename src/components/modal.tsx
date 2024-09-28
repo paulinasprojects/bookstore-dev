@@ -46,16 +46,19 @@ const AddNewCardModal = ({setOpen}: ModalProps) => {
           <div className="card-number-input-container">
             <span className="modal-title">Card Number</span>
             <InputField
+              className='card-number-input'
               placeholer="Example: 1234 5678 9012"
               name="cardNumber"
               register={register}
               error={errors?.cardNumber}
+              type="number"
             />
             <img src={cards} alt="" />
           </div>
           <div className="card-number-input-container">
             <span className="modal-title">Validity Period</span>
             <InputField
+              className='card-number-input'
               placeholer="ex: 11 / 25"
               name="cardValidity"
               register={register}
@@ -65,10 +68,12 @@ const AddNewCardModal = ({setOpen}: ModalProps) => {
           <div className="card-number-input-container">
             <span className="modal-title">CVV</span>
             <InputField
+              className='card-number-input'
               placeholer="ex: 123"
               name="cardCvv"
               register={register}
               error={errors?.cardCvv}
+              type="number"
             />
           </div>
           <div className="modal-privacy-policy">
