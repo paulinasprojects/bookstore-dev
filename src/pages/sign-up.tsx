@@ -59,6 +59,7 @@ const SignUpPage = () => {
               placeholer="Full Name"
               error={errors.name}
               type="text"
+              inputProps={{autoComplete: "name"}}
             />
           </div>
           <div>
@@ -69,6 +70,7 @@ const SignUpPage = () => {
               placeholer="Email Address"
               error={errors.email}
               type="email"
+              inputProps={{autoComplete: "email"}}
             />
           </div>
           <div>
@@ -79,6 +81,7 @@ const SignUpPage = () => {
               placeholer="Password"
               error={errors.password}
               type="password"
+              inputProps={{autoComplete: "current-password"}}
             />
           </div>
           <div className="terms-and-services-button-container">

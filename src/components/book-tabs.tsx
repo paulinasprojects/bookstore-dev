@@ -1,15 +1,16 @@
 import {useState} from 'react';
 import Tabs from '@/components/tabs';
-import BookContent from '@/components/book-content';
+import TabContent from '@/components/tab-content';
 import AllBooks from './all-books';
 import FictionBooks from './fiction-books';
 import LiteratureBooks from './literature-books';
-import "@/styles/book-tabs.scss";
 import MysteryBooks from './mystery-books';
 import FantasyBooks from './fantasy-books';
 import HorrorBooks from './horror-books';
 import ActionBooks from './action-books';
 import ClassicsBooks from './classics-books';
+
+import "@/styles/book-tabs.scss";
 
 const BookTabs = () => {
   const [toggle, setToggle] = useState(1);
@@ -82,7 +83,7 @@ const BookTabs = () => {
         />
       </div>
       <div>
-        <BookContent content={getContent()}/>
+        <TabContent content={getContent()}/>
       </div>
     </>
   )

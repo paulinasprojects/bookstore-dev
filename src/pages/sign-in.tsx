@@ -57,6 +57,7 @@ const SignInPage = () => {
               placeholer="Email Address"
               error={errors.email}
               type="email"
+              inputProps={{autoComplete: "email"}}
             />
           </div>
           <div>
@@ -67,6 +68,7 @@ const SignInPage = () => {
               placeholer="Password"
               error={errors.password}
               type="password"
+              inputProps={{autoComplete: "current-password"}}
             />
           </div>
           <div className="forgot-button-container">

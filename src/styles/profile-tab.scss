@@ -1,0 +1,35 @@
+@import "./responsive.scss";
+
+.profile-tab-active {
+  width: 298px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 120%;
+
+  @include sm {
+    width: 133px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.025rem;
+    line-height: 120%;
+  }
+}
+
+.profile-tab-container {
+  width: 298px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--base-color-400);
+
+  @include sm {
+    white-space: nowrap;
+    width: 133px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.025rem;
+    line-height: 120%;
+  }
+}

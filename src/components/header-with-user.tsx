@@ -42,9 +42,9 @@ const HeaderWithUser = ({isNotificationsPage}: HeaderWithUserProps) => {
           <CartIcon/>
           </Link>
         </div>
-        <div>
+        <Link to="/my-profile">
           <img src={profilePic} alt="" />
-        </div>
+        </Link>
       </div>
       </nav>
     </>

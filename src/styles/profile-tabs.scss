@@ -1,0 +1,46 @@
+@import "./responsive.scss";
+
+.profile-tabs-test-container {
+  display: flex;
+  gap: 48px;
+  
+  @include md {
+    gap: 24px;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.profile-tabs-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  outline: 1px solid var(--base-color-200);
+
+  @include sm {
+    display: grid;
+    grid-template-columns: repeat(3, 139px);
+    align-content: center;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 5px;
+  }
+  
+  .profile-tab-personal-profile {
+    margin-top: 32px;
+    margin-left: 40px;
+
+    @include sm {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+
+  .profile-tab {
+    margin-left: 40px;
+  }
+}

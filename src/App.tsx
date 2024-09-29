@@ -14,6 +14,7 @@ import CartPage from "./pages/cart-page"
 import CheckoutPage from "./pages/checkout-page"
 import CheckoutSuccess from "./pages/checkout-success"
 import CheckoutFailed from "./pages/checkout-failed"
+import MyProfile from "./pages/my-profile"
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
     <Route path="/forgot-password/step-2" element={<ForgotPasswordStep2/>}/>
     <Route path="/forgot-password/step-3" element={<ForgotPasswordStep3/>}/>
     <Route path="/forgot-password/step-4" element={<ForgotPasswordStep4/>}/>
+    <Route path="/my-profile" element={<LayoutWithDiscover><MyProfile/></LayoutWithDiscover>}/>
     <Route path="/discover" element={<LayoutWithDiscover><DiscoverPage/></LayoutWithDiscover>}/>
     <Route path="/cart" element={<LayoutWithDiscover><CartPage/></LayoutWithDiscover>}/>
     <Route path="/checkout" element={<LayoutWithDiscover><CheckoutPage/></LayoutWithDiscover>}/>

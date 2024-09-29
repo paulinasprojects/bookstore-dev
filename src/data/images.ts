@@ -1,3 +1,6 @@
+import profileImageBig from "/profile-pic-big.png";
+import profileImageSmall from "/profile-pic-small.png";
+
 import testimage from "/choo-choo-stories.png";
 import sneakPeak1 from "/book-sneak-peek-1.png";
 import sneakpeak2 from "/book-sneek-peek-2.png";
@@ -124,4 +127,6 @@ export {
   cartImage4,
   cartImage5,
   cartImage6,
+  profileImageBig,
+  profileImageSmall,
 };
