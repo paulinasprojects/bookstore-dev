@@ -1,0 +1,192 @@
+@import "./responsive.scss";
+
+.address-list-container {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+
+  @include sm {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    gap: 16px;
+  }
+
+  .address-list-input {
+    width: 780px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--base-color-300);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+
+    @include sm {
+      width: 335px;
+
+    }
+  }
+
+  .add-new-address-button {
+    width: 202px;
+    height: 41px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: var(--base-color-800);
+    color: var(--base-color-100);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @include sm {
+      width: 335px;
+    }
+  }
+}
+
+.address-list-title-container {
+  margin-top: 20px;
+
+  .address-list-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+
+    @include sm {
+      display: none;
+    }
+  }
+}
+
+.address-list-main-container {
+  background-color: var(--base-color-100);
+  border: 1px solid var(--base-color-300);
+  border-radius: 4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 1014px;
+  height: 185px;
+  padding: 20px;
+
+  @include md {
+    width: 702px;
+    height: 209px;
+  }
+
+  @include sm {
+    width: 335px;
+    height: 230px;
+    margin-left: 40px;
+  }
+
+  
+
+  .address-list-main-house {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+
+  }
+
+  .address-list-main-address {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--base-color-800);
+    color: var(--base-color-100);
+    text-align: center;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    @include sm {
+      display: none;
+    }
+
+  }
+
+  .address-list-house-address {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    @include sm {
+      align-items: unset;
+      flex-direction: column;
+    }
+  }
+
+  .address-list-active {
+    margin-left: auto;
+    padding: 5px 8px;
+    background-color: var(--information-green-color-600);
+    color: var(--base-color-100);
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    @include md {
+      margin-left: 0;
+    }
+   
+    @include sm {
+      display: none;
+    }
+  }
+
+  .address-list-main {
+    margin-top: 17px;
+    font-size: 16px;
+  }
+
+  .address-list-change {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    @include md {
+      gap: 32px;
+    }
+
+    .address-list-phone-number {
+      font-size: 16px;
+    }
+      .address-list-change-address {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-left: auto;
+
+        .trash-icon {
+          width: 24px;
+          height: 24px;
+        }
+
+        @include md {
+          margin-left: 0;
+        }
+
+        .address-list-change-button {
+          border: 1.5px solid var(--base-color-800);
+          padding: 10px 25px;
+          background-color: var(--base-color-100);
+          color: var(--base-color-800);
+          text-transform: uppercase;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "Inter", sans-serif;
+          cursor: pointer;
+
+          @include sm {
+            padding: 10px 18px;
+          }
+        }
+      }
+  }
+}

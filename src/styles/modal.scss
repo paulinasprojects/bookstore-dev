@@ -24,6 +24,10 @@
   flex-direction: column;
   gap: 24px;
 
+  .arrow-icon {
+    cursor: pointer;
+  }
+
   .add-new-card-title {
     font-family: "Inter", sans-serif;
     font-weight: bold;

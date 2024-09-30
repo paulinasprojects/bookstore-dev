@@ -37,7 +37,7 @@ const AddNewCardModal = ({setOpen}: ModalProps) => {
     <div className='modal-background'>
       <div className="modal-container">
         <div className="modal-title-container">
-            <FaArrowLeft onClick={setOpen}/>
+            <FaArrowLeft onClick={setOpen} className="arrow-icon"/>
           <span className="add-new-card-title">
             Add New Card
           </span>
