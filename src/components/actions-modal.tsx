@@ -1,20 +1,23 @@
 import "@/styles/logout-modal.scss";
 
-interface LogoutModalProps {
+interface ActionModalProps {
   setOpen: () => void;
+  title?: string;
+  description?: string;
+  buttonAction?: string;
 }
 
 
-const LogoutModal = ({setOpen}: LogoutModalProps) => {
+const ActionModal = ({setOpen, title, description, buttonAction}: ActionModalProps) => {
   return (
     <div className="modal-background">
       <div className="logout-modal-container">
         <div className="logout-modal-title-container">
-          <h1 className="logout-modal-tite">Logout</h1>
-          <span>Are you sure you want to logout now?</span>
+          <h1 className="logout-modal-title">{title}</h1>
+          <span>{description}</span>
         </div>
         <div className="logout-modal-button-container">
-          <button className="logout-modal-logout-button">Logout</button>
+          <button className="logout-modal-logout-button">{buttonAction}</button>
           <button className="logout-mododal-cancel-button" onClick={setOpen}>Cancel</button>
         </div>
       </div>
@@ -22,4 +25,4 @@ const LogoutModal = ({setOpen}: LogoutModalProps) => {
   )
 }
 
-export default LogoutModal
+export default ActionModal

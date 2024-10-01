@@ -3,7 +3,7 @@ import { profileImageBig } from "@/data/images";
 import "@/styles/personal-profile.scss";
 import { Upload } from "./icons";
 import GenderDropdown from "./gender-dropdown";
-import LogoutModal from "./logout-modal";
+import ActionModal from "./actions-modal";
 
 const PersonalProfile = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -65,7 +65,12 @@ const PersonalProfile = () => {
           <button className="personal-profile-log-out-button" onClick={() => setOpen(!open)}>Logout</button>
         </div>
         {open && (
-          <LogoutModal setOpen={toggleModal}/>
+          <ActionModal 
+            title="Logout"
+            description="Are you sure you want to logout now?"
+            buttonAction="Logout"
+            setOpen={toggleModal}
+          />
         )}
     </div>
   )

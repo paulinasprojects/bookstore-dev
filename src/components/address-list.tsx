@@ -2,13 +2,19 @@ import { useState } from "react";
 import { BiTrash } from "react-icons/bi";
 import "@/styles/address-list.scss";
 import AddNewAddressModal from "./add-new-address-modal";
+import ActionModal from "./actions-modal";
 
 const AddressList = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const [openDeleteModal, setOpenDeleteModal ] = useState<boolean>(false);
 
   const toggleModal = () => {
     setOpen(!open);
   }
+
+  const onDeleteOpenModal = () => {
+    setOpenDeleteModal(!openDeleteModal)
+  };
 
   return (
     <div>
@@ -31,7 +37,7 @@ const AddressList = () => {
         <div className="address-list-change">
           <span className="address-list-phone-number">081234567890</span>
           <div className="address-list-change-address">
-            <BiTrash className="trash-icon"/>
+            <BiTrash className="trash-icon" onClick={() => setOpenDeleteModal(!openDeleteModal)}/>
             <button className="address-list-change-button">Change</button>
           </div>
         </div>
@@ -53,6 +59,15 @@ const AddressList = () => {
       </div>
       {open && (
         <AddNewAddressModal setOpen={toggleModal}/>
+      )}
+
+      {openDeleteModal && (
+        <ActionModal
+          setOpen={onDeleteOpenModal}
+          title="Delete"
+          description="Are you sure you want to delete this address?"
+          buttonAction="Delete"
+        />
       )}
     </div>
   )
