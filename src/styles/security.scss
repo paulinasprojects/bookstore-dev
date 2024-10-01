@@ -1,0 +1,209 @@
+@import "./responsive.scss";
+
+.security-container {
+  margin-top: 32px;
+
+  @include sm {
+    margin-left: 10px;
+  }
+
+  .security-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+}
+
+.security-alert-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: var(--information-red-color-100);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include md {
+    margin-right: 20px;
+  }
+
+  @include sm {
+    margin-left: 10px;
+  }
+
+  .info-outline {
+    color: var(--information-red-color-400);
+    width: 24px;
+    height: 24px;
+  }
+
+  .security-alert-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  .security-alert-description {
+    font-size: 16px;
+  }
+}
+
+.login-activity {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include sm {
+    margin-left: 10px;
+  }
+
+  .login-activity-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  .login-activity-description {
+    font-size: 16px;
+  }
+
+}
+
+.security-activity-container {
+  display: flex;
+  gap: 24px;
+
+
+  .security-activity-button {
+    margin-left: auto;
+    background-color: var(--information-green-color-600);
+    width: 107px;
+    height: 25px;
+    text-transform: uppercase;
+    color: var(--base-color-100);
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    padding-top: 4px;
+
+    @include md {
+      margin-right: 20px;
+    }
+
+    @include sm {
+      margin-left: 0;
+    }
+  }
+}
+
+.security-image-container {
+  width: 91px;
+  height: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--information-green-color-100);
+}
+
+.security-activity-ip {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .security-activity-laptop {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+}
+
+.login-history-container {
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  @include sm {
+    margin-left: 10px;
+  }
+}
+
+.login-history-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.security-login-activity-container {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+
+  @include sm {
+    margin-left: 10px;
+  }
+
+  .security-login-image-container {
+    width: 91px;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--base-color-100);
+  }
+
+  .security-login-activity-ip {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .security-login-last-active {
+      color: var(--base-color-400);
+      font-size: 16px;
+    }
+
+    .security-login-last-location {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 1.125rem;
+      line-height: 120%;
+    }
+  }
+
+  .security-login-activity-button {
+    margin-left: auto;
+    width: 137px;
+    height: 41px;
+    outline: none;
+    background-color: var(--white);
+    color: var(--base-color-800);
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include md {
+      margin-right: 20px;
+    }
+
+    @include sm {
+      font-size: 12px;
+    }
+  }
+}

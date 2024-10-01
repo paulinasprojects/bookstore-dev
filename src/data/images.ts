@@ -68,6 +68,8 @@ import cartImage3 from "/cart-image-three.png";
 import cartImage4 from "/cart-image-four.png";
 import cartImage5 from "/cart-image-five.png";
 import cartImage6 from "/cart-image-six.png";
+import laptop from "/Laptop.png";
+import graylaptop from "/gray-laptop.png";
 
 export {
   sneakPeak1,
@@ -129,4 +131,6 @@ export {
   cartImage6,
   profileImageBig,
   profileImageSmall,
+  laptop,
+  graylaptop,
 };
