@@ -17,7 +17,8 @@
   }
 
   @include sm {
-    margin-left: 60px;
+    margin-left: 20px;
+    align-items: flex-start;
     flex-direction: column;
     gap: 65px;
   }
@@ -102,7 +103,7 @@
   border: none;
 
   @include sm {
-    width: 160px;
+    width: 322px;
   }
 }
 

@@ -102,4 +102,8 @@
   height: 41px;
   border-radius: 4px;
   cursor: pointer;
+
+  @include sm {
+    width: 137px;
+  }
 }

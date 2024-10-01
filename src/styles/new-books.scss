@@ -9,6 +9,8 @@
   justify-content: space-between;
 
   @include sm {
+    margin-top: 40px;
+    margin-left: 0;
     gap: 24px;
     justify-content: center;
     white-space: nowrap;
@@ -34,6 +36,10 @@
   margin-right: 80px;
   display: flex;
   gap: 13px;
+
+  @include sm {
+    margin-right: 0;
+  }
 }
 
 .arrow-back-button {

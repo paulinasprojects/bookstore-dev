@@ -187,7 +187,6 @@
     margin-left: auto;
     width: 137px;
     height: 41px;
-    outline: none;
     background-color: var(--white);
     color: var(--base-color-800);
     border-radius: 4px;
@@ -203,6 +202,7 @@
     }
 
     @include sm {
+      padding: 5px;
       font-size: 12px;
     }
   }
