@@ -4,6 +4,7 @@ import cards from '/cards.png';
 import {useForm} from 'react-hook-form';
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { cardSchema } from "@/lib/schemas";
 import InputField from "./input-field";
 
 
@@ -11,16 +12,10 @@ interface ModalProps {
   setOpen: () => void;
 }
 
-const cardSchema = z.object({
-  cardNumber: z.number().min(1, {message: "Card Number is required"}).max(12, {message: "Card number is invalid."}),
-  cardValidity: z.number().min(1, {message: "Card Validity is required"}).max(4, {message: "Card validity is invalid"}),
-  cardCvv: z.number().min(1,{message: "Card Cvv is required"}).max(3, {message: "Card cvv is invalid"}),
-})
-
 
 
 const AddNewCardModal = ({setOpen}: ModalProps) => {
-  const {register, handleSubmit, formState: {errors}} = useForm<z.infer<typeof cardSchema>>({
+  const {register, handleSubmit, reset, formState: {errors}} = useForm<z.infer<typeof cardSchema>>({
     resolver: zodResolver(cardSchema),
     defaultValues: {
       cardNumber: 0,
@@ -31,6 +26,8 @@ const AddNewCardModal = ({setOpen}: ModalProps) => {
 
   const onSubmit = async (values: z.infer<typeof cardSchema>) => {
     console.log(values);
+    reset();
+    setOpen();
   };
 
   return (

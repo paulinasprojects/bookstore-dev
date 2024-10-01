@@ -1,9 +1,17 @@
+import { useState } from "react";
 import { profileImageBig } from "@/data/images";
 import "@/styles/personal-profile.scss";
 import { Upload } from "./icons";
 import GenderDropdown from "./gender-dropdown";
+import LogoutModal from "./logout-modal";
 
 const PersonalProfile = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const toggleModal = () => {
+    setOpen(!open);
+  }
+
   return (
     <div className="personal-profile-container">
       <div className="personal-profile-image-container">
@@ -54,8 +62,11 @@ const PersonalProfile = () => {
           </div>
         </div>
         <div className="personal-profile-log-out">
-          <button className="personal-profile-log-out-button">Logout</button>
+          <button className="personal-profile-log-out-button" onClick={() => setOpen(!open)}>Logout</button>
         </div>
+        {open && (
+          <LogoutModal setOpen={toggleModal}/>
+        )}
     </div>
   )
 }

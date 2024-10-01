@@ -1,12 +1,20 @@
-import "@/styles/address-list.scss";
+import { useState } from "react";
 import { BiTrash } from "react-icons/bi";
+import "@/styles/address-list.scss";
+import AddNewAddressModal from "./add-new-address-modal";
 
 const AddressList = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const toggleModal = () => {
+    setOpen(!open);
+  }
+
   return (
     <div>
       <div className="address-list-container">
         <input type="text" placeholder="Search address" className="address-list-input" />
-        <button className="add-new-address-button">Add New Address</button>
+        <button className="add-new-address-button" onClick={() => setOpen(!open)}>Add New Address</button>
       </div>
       <div className="address-list-title-container">
         <span className="address-list-title">Address List</span>
@@ -43,6 +51,9 @@ const AddressList = () => {
           </div>
         </div>
       </div>
+      {open && (
+        <AddNewAddressModal setOpen={toggleModal}/>
+      )}
     </div>
   )
 }

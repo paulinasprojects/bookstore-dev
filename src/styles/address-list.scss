@@ -4,6 +4,7 @@
   margin-top: 32px;
   display: flex;
   gap: 32px;
+  
 
   @include sm {
     align-items: center;
@@ -22,6 +23,10 @@
     font-size: 16px;
     font-family: "Poppins", sans-serif;
 
+    @include md {
+      width: 468px;
+    }
+
     @include sm {
       width: 335px;
 
@@ -38,6 +43,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    @include md {
+      width: 150px;
+      font-size: 12px;
+    }
 
     @include sm {
       width: 335px;
