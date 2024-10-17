@@ -125,7 +125,7 @@
   margin-left: 40px;
   
   @include sm {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 
@@ -203,6 +203,10 @@
   @include md {
     font-size: 16px;
   }
+
+  @include sm {
+    font-size: 14px;
+  }
 }
 
 .summary-last-paragraph-container{
@@ -226,8 +230,9 @@
   margin-left: 40px;
 
   @include sm {
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 5px;
+    justify-content: initial;
   }
 }
 
@@ -247,9 +252,14 @@
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
+
+  @include sm {
+    margin-left: auto;
+    margin-right: 10px;
+  }
 }
 
-.test-container {
+.details-review-container {
   display: flex;
   gap: 15px;
   margin-top: 24px;
@@ -261,35 +271,40 @@
   }
 
   @include sm {
-    margin-left: 15px;
+    margin-left: 10px;
   }
 }
 
-.test-container-2 {
+.review-container {
   display: flex;
   flex-direction: column;
 
-  .test-span {
+
+  .icon-span {
     display: flex;
     align-items: center;
     gap: 8px;
     font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 120%;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
   }
 
   .span-title {
     font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 120%;
-  margin-top: 18px;
-  margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 120%;
+    margin-top: 18px;
+    margin-bottom: 8px;
   }
 
   .span-description {
     font-size: 16px;
+
+    @include sm {
+      font-size: 14px;
+    }
   }
 }
 

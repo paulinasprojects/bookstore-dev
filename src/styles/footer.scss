@@ -1,19 +1,8 @@
 @import "./responsive.scss";
 
 .footer {
-  width: 1440px;
-  height: 312px;
   background-color: #fff;
   outline: 1px solid var(--base-color-200);
-
-  @include md {
-    width: 1024px;
-    height: 335px;
-  }
-
-  @include sm {
-    width: 429px;
-  }
 }
 
 .footer-container {
@@ -37,7 +26,7 @@
   margin-left: 80px;
 
   @include sm {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 

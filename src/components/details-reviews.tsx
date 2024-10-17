@@ -7,10 +7,10 @@ interface Props {
 
 const DetailsReviews = ({icon, image, title, description}: Props) => {
   return (
-    <div className="test-container">
+    <div className="details-review-container">
       <img src={image} alt="" className="review-pic" />
-      <div className="test-container-2">
-        <span className="test-span">
+      <div className="review-container">
+        <span className="icon-span">
           {icon} 5.0
         </span>
         <span className="span-title">
