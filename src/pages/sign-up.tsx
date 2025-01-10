@@ -85,7 +85,7 @@ const SignUpPage = () => {
             />
           </div>
           <div className="terms-and-services-button-container">
-            <Link to="/forgot-password" className="terms-and-services-button">By registering, I agree Terms and Conditions and <br /> Privacy Policy.</Link>
+            <span className="terms-and-services-button">By registering, I agree Terms and Conditions and <br /> Privacy Policy.</span>
           </div>
           <button className="login-modal-login-button" type="submit">Register</button>
 

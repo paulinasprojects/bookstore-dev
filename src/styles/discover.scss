@@ -182,4 +182,11 @@
   height: 41px;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-stock-button:hover {
+  background-color: var(--base-color-100);
+  color: var(--base-color-800);
+  border: 2px solid var(--base-color-800);
 }

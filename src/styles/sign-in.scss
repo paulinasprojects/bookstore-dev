@@ -142,6 +142,10 @@
     color: var(--base-color-800);
   }
 
+  .forgot-button:hover {
+    text-decoration: underline;
+  }
+
   .login-modal-login-button {
     width: 410px;
     height: 41px;
@@ -154,6 +158,10 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+  }
+
+  .login-modal-login-button:hover {
+    background-color: var(--base-color-800);
   }
 
   .or-span {
@@ -184,6 +192,11 @@
     justify-content: center;
     cursor: pointer;
   }
+
+  .login-button-social-google:hover {
+    background-color: #7494f6;
+  }
+
   .login-button-social-facebook {
     width: 410px;
     height: 41px;
@@ -200,6 +213,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+
+  .login-button-social-facebook:hover {
+    background-color: #8899c9;
   }
 
   .login-button-dont-have-account {

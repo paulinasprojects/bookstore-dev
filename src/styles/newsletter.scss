@@ -73,6 +73,11 @@
   }
 }
 
+.newsletter-google-play-button:hover {
+  background-color: var(--base-color-100);
+  color: var(--base-color-800);
+}
+
 .newsletter-icon {
   width: 18px;
   height: 18px;
@@ -97,6 +102,11 @@
     width: 163px;
     height: 41px;
   }
+}
+
+.newsletter-app-store-button:hover {
+  background-color: var(--base-color-800);
+  color: var(--base-color-100);
 }
 
 .newsletter-input-container {
@@ -134,5 +144,10 @@
   font-weight: 600;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+}
 
+.newsletter-send-button:hover {
+  color: var(--base-color-800);
+  background-color: var(--base-color-100);
+  border: 2px solid var(--base-color-800);
 }

@@ -8,8 +8,6 @@
   justify-content: space-between;
 
   @include sm {
-
-    // flex-direction: column;
     justify-content: space-between;
   }
 }
@@ -34,8 +32,6 @@
   }
 }
 
-
-
 .header-with-user-input-container {
   position: relative;
   display: flex;
@@ -51,10 +47,14 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--base-color-800);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
-  @include sm {
-    // display: none;
-  }
+.discover-button:hover {
+  color: var(--base-color-500);
 }
 
 

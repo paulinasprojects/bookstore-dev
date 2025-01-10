@@ -19,7 +19,7 @@ const CheckoutPage = () => {
     <div>
       <div className="checkout-flex-container">
         {/* Left */}
-        <div className="test-container-flex">
+        <div className="left-container-flex">
           <div className="checkout-title-container">
             <h1 className="checkout-title">Checkout</h1>
           </div>

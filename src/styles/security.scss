@@ -206,4 +206,9 @@
       font-size: 12px;
     }
   }
+
+  .security-login-activity-button:hover {
+    color: var(--white);
+    background-color: var(--base-color-800);
+  }
 }

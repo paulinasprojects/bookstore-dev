@@ -165,6 +165,11 @@
   }
 }
 
+.book-details-get-book:hover {
+  background-color: var(--base-color-100);
+  color: var(--base-color-800);
+}
+
 .book-details-buy-now {
   width: 202px;
   height: 41px;
@@ -180,6 +185,11 @@
   @include sm {
     width: 159px;
   }
+}
+
+.book-details-buy-now:hover {
+  background-color: var(--base-color-800);
+  color: var(--white);
 }
 
 .book-summary-container {

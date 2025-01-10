@@ -1,35 +1,35 @@
 @import "./responsive.scss";
 
-.logout-modal-container {
+.actions-modal-container {
   width: 668px;
   height: 206px;
-  padding: 20px;
+  padding: 25px;
   background-color: var(--white);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 4px;
 
-  .logout-modal-title-container {
+  .actions-modal-title-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin-left: 20px;
   }
 
-  .logout-modal-title {
+  .actions-modal-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 120%;
   }
 
-  .logout-modal-button-container {
+  .actions-modal-button-container {
     display: flex;
     gap: 32px;
     justify-content: flex-end;
     margin-top: 24px;
   }
 
-  .logout-modal-logout-button {
+  .actions-modal-action-button {
     font-size: 14px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -40,7 +40,11 @@
     text-transform: uppercase;
   }
 
-  .logout-mododal-cancel-button {
+  .actions-modal-action-button:hover {
+    color: var(--base-color-500);
+  }
+
+  .actions-modal-cancel-button {
     padding: 10px 60px;
     border-radius: 4px;
     font-size: 14px;
@@ -52,5 +56,11 @@
     color: var(--base-color-100);
     background-color: var(--base-color-800);
     text-transform: uppercase;
+  }
+
+  .actions-modal-cancel-button:hover {
+    background-color: var(--base-color-100);
+    color: var(--base-color-800);
+    outline: 2px solid var(--base-color-800);
   }
 }

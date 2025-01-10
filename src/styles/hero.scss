@@ -76,6 +76,11 @@
   text-transform: uppercase;
 }
 
+.hero-button:hover {
+  background-color: var(--base-color-800);
+  color: var(--white);
+}
+
 .hero-icon {
   width: 20px;
   height: 20px;

@@ -66,6 +66,12 @@
   cursor: pointer;
 }
 
+.footer-google-play-button:hover {
+  background-color: var(--base-color-100);
+  color: var(--base-color-800);
+  outline: 2px solid var(--base-color-800);
+}
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -90,6 +96,11 @@
   cursor: pointer;
 }
 
+.footer-app-store-button:hover {
+  background-color: var(--base-color-800);
+  color: var(--base-color-100);
+}
+
 .copyright-container {
   display: flex;
   justify-content: space-between;
@@ -112,6 +123,8 @@
   }
 }
 
+
+
 .footer-about-bookstore {
   display: flex; 
   flex-direction: column;
@@ -131,6 +144,10 @@
   font-family: "Inter", sans-serif;
   font-weight: bold;
   margin-bottom: 24px;
+}
+
+.footer-link:hover {
+  color: var(--base-color-500);
 }
 
 .footer-social-link-container {
@@ -165,4 +182,8 @@
 .social-icon {
   width: 24px;
   height: 24px;
+}
+
+.social-icon:hover {
+  color: var(--base-color-500);
 }

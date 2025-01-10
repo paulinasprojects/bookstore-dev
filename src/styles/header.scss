@@ -88,6 +88,12 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--base-color-800);
+
+}
+
+.header-discover-button:hover {
+  color: var(--base-color-500);
+
 }
 
 .login-button {
@@ -106,4 +112,10 @@
   @include sm {
     width: 137px;
   }
+}
+
+.login-button:hover {
+  color: var(--base-color-800);
+  background-color: var(--base-color-100);
+  border: 1px solid var(--base-color-800);
 }

@@ -2,11 +2,13 @@ import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import logo from '/bookstore-v2-logo.svg';
 import smallLogo from '/bookstore-logo.svg';
+import { useNavigate } from "react-router-dom";
 
 import "../styles/header.scss";
 
 
 const Header = () => {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -20,12 +22,12 @@ const Header = () => {
       </div>
         <div className="header-button-container">
           <Link to="/"><img src={smallLogo} alt="" className="small-logo" /></Link>
-          <Link to="/discover" className="discover-button">Discover</Link>
-          <Link to="/sign-in" className="login-button">Login</Link>
+          <button className="discover-button" onClick={() => navigate("/discover")}>Discover</button>
+          <button className="login-button" onClick={() => navigate("/sign-in")}>Login</button>
         </div>
     </nav>
     </>
-  )
-}
+  );
+};
 
 export default Header

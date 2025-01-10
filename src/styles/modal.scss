@@ -89,4 +89,9 @@
     cursor: pointer;
     font-weight: 600;
   }
+
+  .modal-save-new-card-button:hover {
+    background-color: var(--white);
+    color: var(--base-color-800);
+  }
 }

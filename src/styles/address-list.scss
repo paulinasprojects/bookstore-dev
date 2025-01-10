@@ -43,6 +43,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    font-weight: bold;
 
     @include md {
       width: 150px;
@@ -52,6 +53,12 @@
     @include sm {
       width: 335px;
     }
+  }
+
+  .add-new-address-button:hover {
+    background-color: var(--base-color-100);
+    color: var(--base-color-800);
+    outline: 2px solid var(--base-color-800);
   }
 }
 
@@ -197,6 +204,11 @@
           @include sm {
             padding: 10px 18px;
           }
+        }
+
+        .address-list-change-button:hover {
+          background-color: var(--base-color-800);
+          color: var(--base-color-100);
         }
       }
   }

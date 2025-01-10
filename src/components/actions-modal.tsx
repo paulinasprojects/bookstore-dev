@@ -1,4 +1,4 @@
-import "@/styles/logout-modal.scss";
+import "@/styles/actions-modal.scss";
 
 interface ActionModalProps {
   setOpen: () => void;
@@ -11,14 +11,14 @@ interface ActionModalProps {
 const ActionModal = ({setOpen, title, description, buttonAction}: ActionModalProps) => {
   return (
     <div className="modal-background">
-      <div className="logout-modal-container">
-        <div className="logout-modal-title-container">
-          <h1 className="logout-modal-title">{title}</h1>
+      <div className="actions-modal-container">
+        <div className="actions-modal-title-container">
+          <h1 className="actions-modal-title">{title}</h1>
           <span>{description}</span>
         </div>
-        <div className="logout-modal-button-container">
-          <button className="logout-modal-logout-button">{buttonAction}</button>
-          <button className="logout-mododal-cancel-button" onClick={setOpen}>Cancel</button>
+        <div className="actions-modal-button-container">
+          <button className="actions-modal-action-button" onClick={setOpen}>{buttonAction}</button>
+          <button className="actions-modal-cancel-button" onClick={setOpen}>Cancel</button>
         </div>
       </div>
     </div>

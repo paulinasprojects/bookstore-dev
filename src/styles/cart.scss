@@ -269,6 +269,11 @@
       color: var(--secondary-color-500);
     }
   }
+
+  .voucher-button:hover {
+    background-color: var(--base-color-800);
+    color: var(--base-color-100);
+  }
  } 
 
  .shopping-summary-container {
@@ -396,12 +401,17 @@
     color: var(--white);
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
 
     @include md {
       width: 274px;
     }
+  }
+
+  .summary-checkout-button:hover {
+    background-color: var(--base-color-100);
+    color: var(--base-color-800);
   }
 }
 
