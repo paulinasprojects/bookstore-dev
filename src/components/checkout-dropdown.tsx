@@ -17,6 +17,7 @@ const CheckoutDropdown = () => {
       </Button>
       <Popover>
         <ListBox>
+          <ListBoxItem>2-3 days</ListBoxItem>
           <ListBoxItem>5 - 6 days</ListBoxItem>
           <ListBoxItem>9 - 10 days</ListBoxItem>
         </ListBox>
