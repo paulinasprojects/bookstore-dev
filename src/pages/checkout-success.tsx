@@ -1,10 +1,12 @@
 import successImage from '/success.png';
 import "@/styles/checkout-success.scss";
 import useWindowSize from 'react-use/lib/useWindowSize'
-import Confetti from 'react-confetti'
+import Confetti from 'react-confetti';
+import { useNavigate } from 'react-router-dom';
 
 const CheckoutSuccess = () => {
   const { height, width } = useWindowSize();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -20,7 +22,7 @@ const CheckoutSuccess = () => {
           Congrats your order has been successful. Keep an eye <br />
           on your order process on the transaction page!
          </span>
-         <button className='checkout-success-button'>Transactions</button>
+         <button className='checkout-success-button' onClick={() => navigate("/")}>Go Back</button>
       </div>
     </div>
     
