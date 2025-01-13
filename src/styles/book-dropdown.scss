@@ -1,43 +1,93 @@
 @import "./responsive.scss";
+@import "@react-aria/example-theme";
 
-.menu-button {
-  width: 207px;
-  height: 50px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-  background-color: var(--white);
-  border: 1.5px solid var(--base-color-200);
+.react-aria-Select {
+  color: var(--base-color-800);
+ 
+  .react-aria-Button {
+    box-shadow: 0 1px 2px rgba(0 0 0 / 0.1);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 299px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--white);
+    outline: none;
+    border: 1px solid var(--base-color-200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  @include md {
-    width: 100%;
+  
+
+    &[data-focus-visible] {
+      outline: 2px solid var(--white);
+      outline-offset: -1px;
+    }
+  }
+
+  .react-aria-SelectValue {
+    &[data-placeholder] {
+      color: var(--base-color-800);
+    }
+  }
+
+  span[aria-hidden] {
+    width: 1.5rem;
+    line-height: 1.375rem;
+    margin-left: 1rem;
+    padding: 1px;
+    background: var(--white);
+    color: var(--highlight-foreground);
+    forced-color-adjust: none;
+    border-radius: 4px;
+    font-size: 0.857rem;
   }
 }
 
-.book-dropdown-chevron {
-  width: 24px;
-  height: 24px;
-}
+.react-aria-Popover[data-trigger=Select] {
 
-.book-dropdown-menu-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .react-aria-ListBox {
+    display: block;
+    width: unset;
+    max-height: inherit;
+    min-height: unset;
+    border: 1px solid var(--base-color-200);
 
-.book-dropdown-menu-item {
-  display: flex;
-  width: 207px;
-  height: 50px;
-  font-size: 14px;
-  border-radius: 4px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: var(--white);
-  border: 1.5px solid var(--base-color-200);
+    .react-aria-Header {
+      padding-left: 1.571rem;
+    }
+  }
+
+  .react-aria-ListBoxItem {
+    background-color: var(--white) !important;
+    padding: 0.286rem 0.571rem 0.286rem 1.571rem;
+
+    &[data-focus-visible] {
+      outline: none;
+      background-color: var(--white);
+    }
+
+    &[data-selected] {
+      font-weight: 600;
+      background: var(--white);
+      color: var(--base-color-800);
+      
+
+      &::before {
+        content: '✓';
+        content: '✓' / '';
+        alt: ' ';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+      }
+    }
+
+    &[data-focused],
+    &[data-pressed] {
+      background: var(--white);
+      color: var(--base-color-800);
+    }
+  }
 }

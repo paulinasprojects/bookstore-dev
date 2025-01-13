@@ -82,7 +82,7 @@
 
     &[data-focused],
     &[data-pressed] {
-      background: var(--highlight-background);
+      background: var(--white);
       color: var(--highlight-foreground);
     }
   }

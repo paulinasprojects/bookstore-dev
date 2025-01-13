@@ -35,12 +35,12 @@
 
   &[data-selected] {
     &:before {
-      border-color: var(--highlight-background);
+      border-color: var(--white);
       border-width: 0.429rem;
     }
 
     &[data-pressed]:before {
-      border-color: var(--highlight-background-pressed);
+      border-color: var(--white);
     }
   }
 
