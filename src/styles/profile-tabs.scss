@@ -8,6 +8,11 @@
     gap: 24px;
   }
 
+  @include ms {
+    gap: 10px;
+    flex-direction: column;
+  }
+
   @include sm {
     flex-direction: column;
   }
@@ -20,6 +25,15 @@
   gap: 24px;
   outline: 1px solid var(--base-color-200);
 
+
+  @include ms {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    padding: 25px;
+    gap: 0px;
+  }
+
+
   @include sm {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -31,6 +45,11 @@
     margin-top: 32px;
     margin-left: 40px;
 
+    @include ms {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+
     @include sm {
       margin-top: 0;
       margin-left: 10px;
@@ -39,5 +58,9 @@
 
   .profile-tab {
     margin-left: 40px;
+
+    @include ms {
+      margin-left: 0;
+    }
   }
 }

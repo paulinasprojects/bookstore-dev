@@ -1,5 +1,12 @@
 @import "./responsive.scss";
 
+
+.address-list-main-content-container {
+  @include ms {
+    margin-left: 40px;
+  }
+}
+
 .address-list-container {
   margin-top: 32px;
   display: flex;

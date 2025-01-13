@@ -1,11 +1,17 @@
 @import "./responsive.scss";
 
-.book-details-flex-container {
+.book-details-first-flex-container {
   display: flex;
-  gap: 60px;
+  flex-direction: column;
+  gap: 40px;
+}
 
-  @include md {
-    gap: 40px;
+.book-details-flex-flex-container {
+  display: flex;
+  gap: 24px;
+
+  @include ms {
+    flex-direction: column;
   }
 
   @include sm {
@@ -25,6 +31,12 @@
   padding-right: 40px;
   margin-left: 40px;
   margin-top: 22px;
+
+  @include ms {
+    margin-left: 0;
+    padding-right: 0;
+
+  }
 
   @include sm {
     margin-left: 15px;
@@ -52,6 +64,10 @@
     padding-bottom: 0;
   }
 
+  @include ms {
+    padding-top: 20px;
+  }
+
   @include sm {
     padding-left: 20px;
   }
@@ -68,7 +84,12 @@
     flex-direction: row;
     margin-left: 10px;
   }
+
+  @include ms {
+    justify-content: space-evenly;
+  }
 }
+
 .image-1 {
    width: 430px;
    height: 528px; 
@@ -76,6 +97,11 @@
 
    @include md {
     width: 347px;
+    height: 425px;
+   }
+
+   @include ms {
+    width: 490px;
     height: 425px;
    }
 
@@ -94,6 +120,11 @@
     width: 102px;
     height: 110px;
   }
+
+  @include ms {
+    width: 130px;
+    height: 190px;
+  }
 }
 
 .image-3 {
@@ -104,6 +135,11 @@
   @include md {
     width: 102px;
     height: 110px;
+  }
+
+  @include ms {
+    width: 130px;
+    height: 190px;
   }
 }
 
@@ -117,8 +153,12 @@
     width: 102px;
     height: 110px;
   }
-}
 
+  @include ms {
+    width: 130px;
+    height: 190px;
+  }
+}
 
 .book-details-summary-container {
   margin-top: 40px;
@@ -133,6 +173,10 @@
   margin-top: 40px;
   margin-left: 40px;
 
+  @include ms {
+    margin-left: 20px;
+  }
+
   @include sm {
     margin-left: 20px;
   }
@@ -142,6 +186,10 @@
   margin-top: 40px;
   display: flex;
   gap: 16px;
+
+  @include ms {
+   margin-right: 20px;
+  }
 }
 
 .book-details-get-book {
@@ -181,7 +229,8 @@
   font-weight: 600;
   font-family: "Inter", sans-serif;
   cursor: pointer;
-  
+
+
   @include sm {
     width: 159px;
   }
@@ -224,8 +273,8 @@
 
   .summary-last-paragraph {
     font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -236,11 +285,13 @@
 .book-details-review-title-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
   margin-left: 40px;
-
+  margin-right: 40px;
+  
   @include sm {
     margin-left: 0px;
+    margin-right: 0;
     padding: 5px;
     justify-content: initial;
   }
@@ -262,6 +313,9 @@
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+
 
   @include sm {
     margin-left: auto;
@@ -311,6 +365,7 @@
 
   .span-description {
     font-size: 16px;
+    line-break: auto;
 
     @include sm {
       font-size: 14px;
@@ -320,6 +375,10 @@
 
 .book-details-right-container {
   margin-top: 23px;
+
+  @include ms {
+   margin-left: 20px;
+  }
 
   @include sm {
     margin-left: 10px;
@@ -347,6 +406,10 @@
 
 .book-details-title-container {
   margin-top: 14px;
+
+  @include ms {
+    margin-right: 20px;
+  }
 }
 
 .book-details-book-title {
@@ -357,16 +420,29 @@
 
   @include md {
     font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 120%;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 120%;
+  }
+
+  @include ms {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 120%;
   }
 
   @include sm {
     font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 120%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+}
+
+.book-details-book-title br {
+  @include ms {
+    display: none;
   }
 }
 
@@ -380,6 +456,10 @@
   @include md {
     justify-content: center;
     margin-right: 0;
+  }
+
+  @include ms {
+    justify-content: flex-start;
   }
 }
 
@@ -427,6 +507,10 @@
 
   @include md {
     grid-template-columns: repeat(3, 137px); 
+  }
+
+  @include ms {
+    grid-template-columns: repeat(3, 250px); 
   }
 
   @include sm {
@@ -489,6 +573,9 @@
   @include md {
     grid-template-columns: repeat(3, 137px); 
   }
+  @include ms {
+    grid-template-columns: repeat(3, 250px); 
+  }
 }
 
 .book-details-books-container {
@@ -496,6 +583,10 @@
   margin-top: 40px;
   gap: 30px;
   margin-bottom: 40px;
+
+  @include ms {
+    gap: 24px;
+  }
 
   @include sm {
     flex-direction: column;
@@ -508,4 +599,9 @@
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
+
+  @include ms {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

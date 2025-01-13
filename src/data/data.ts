@@ -54,14 +54,14 @@ import {
 export const newBooksData = [
   {
     bookImage: newbookOne,
-    bookTitle: "English Classics: The Island Of Doctor Moreau",
+    bookTitle: "The Island Of Dr. Moreau",
     bookWriter: "H.g. Wells",
     discountPrice: "$23.5",
     bookPrice: "$19.0",
   },
   {
     bookImage: newbookThree,
-    bookTitle: "Funiculi Funicula : Newly Revealed Stories",
+    bookTitle: "Newly Revealed Stories",
     bookWriter: "Toshikazu",
     bookPrice: "$19.0",
   },
@@ -333,14 +333,14 @@ export const recommendationClassicsBooks = [
 export const recommendationDiscoverBooks = [
   {
     bookImage: choochoo,
-    bookTitle: "The Stories of Choo Choo: You're Not as Alone as You ",
+    bookTitle: "The Stories of Choo Choo ",
     bookWriter: "Citra M.",
     bookPrice: "$19.00",
     discountPrice: "$23.5",
   },
   {
     bookImage: sutradara,
-    bookTitle: "Sutradara Itu Menghapus Dialog Kita",
+    bookTitle: "Sutradara Itu Menghapus..",
     bookWriter: "Sapardi D.",
     bookPrice: "$9.9",
   },
@@ -370,19 +370,19 @@ export const recommendationDiscoverBooks = [
   },
   {
     bookImage: miraclesBook,
-    bookTitle: "The Miracles of the Namiya General Store",
+    bookTitle: "The Miracles General Store",
     bookWriter: "Keigo H.",
     bookPrice: "$22.0",
   },
   {
     bookImage: picturesDorianGray,
-    bookTitle: "English Classics: The Picture of Dorian Gray",
+    bookTitle: "The Picture of Dorian Gray",
     bookWriter: "Oscar W.",
     bookPrice: "$12.0",
   },
   {
     bookImage: newbookThree,
-    bookTitle: "Funiculi Funicula : Newly Revealed Stories",
+    bookTitle: "Funiculi Funicula",
     bookWriter: "Toshikazu",
     bookPrice: "$19.0",
   },
@@ -409,14 +409,14 @@ export const recommendationDiscoverBooks = [
 export const BookDetailsNewBooksData = [
   {
     bookImage: newbookOne,
-    bookTitle: "English Classics: The Island Of Doctor Moreau",
+    bookTitle: "The Island Of Dr Moreau",
     bookWriter: "H.g. Wells",
     discountPrice: "$23.5",
     bookPrice: "$19.0",
   },
   {
     bookImage: newbookThree,
-    bookTitle: "Funiculi Funicula : Newly Revealed Stories",
+    bookTitle: "Newly Revealed Stories",
     bookWriter: "Toshikazu",
     bookPrice: "$19.0",
   },

@@ -2,10 +2,8 @@ interface Props {
   icon:  JSX.Element;
   image: string;
   title: string;
-  description: string
 }
-
-const DetailsReviews = ({icon, image, title, description}: Props) => {
+const DetailsReviews = ({icon, image, title}: Props) => {
   return (
     <div className="details-review-container">
       <img src={image} alt="" className="review-pic" />
@@ -17,7 +15,7 @@ const DetailsReviews = ({icon, image, title, description}: Props) => {
           {title}
         </span>
         <span className="span-description">
-          {description}
+        The Stories of Choo Choo is a compilation of drawings created by Citra <br /> Marina during her daily train ride on Jakarta Commuter Line.
         </span>
       </div>
     </div>

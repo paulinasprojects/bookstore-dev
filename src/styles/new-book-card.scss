@@ -80,6 +80,7 @@
     height: 223px;
   }
 
+
   @include sm {
     width: 120px;
     height: 169px;
@@ -102,6 +103,10 @@
   display: flex;
   gap: 61px;
   margin-top: 8px;
+
+  @include ms {
+    gap: 20px;
+  }
 }
 
 .book-card-writer {

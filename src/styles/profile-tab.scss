@@ -7,6 +7,13 @@
   font-size: 1.5rem;
   line-height: 120%;
 
+  @include ms {
+    // width: 133px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 120%;
+  }
   @include sm {
     width: 133px;
     font-family: "Inter", sans-serif;
@@ -23,6 +30,14 @@
   font-size: 1.5rem;
   line-height: 120%;
   color: var(--base-color-400);
+
+  @include ms {
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 120%;
+  }
 
   @include sm {
     white-space: nowrap;

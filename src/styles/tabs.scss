@@ -4,12 +4,14 @@
   border-bottom: 4px solid #000;
   padding-bottom: 16px;
   border-radius: 2px;
-  // text-decoration: underline;
-  // text-underline-position: under;
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 120%;
+
+  @include ms {
+    font-size: 1rem;
+  }
 }
 
 .tab-container {
@@ -18,4 +20,8 @@
   font-size: 1.125rem;
   line-height: 120%;
   color: var(--base-color-500);
+
+  @include ms {
+    font-size: 1rem;
+  }
 }

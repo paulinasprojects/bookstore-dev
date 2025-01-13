@@ -3,20 +3,10 @@
 .book-sorter-container {
   display: flex;
   align-items: center;
-}
+  justify-content: space-between;
 
-
-.total-books {
-  width: 715px;
-  height: 24px;
-
-  @include md {
-    width: 363px;
-    height: 48px;
-  }
-
-  @include sm {
-    margin-left: 20px;
+  @include ms {
+    justify-content: space-around;
   }
 }
 
@@ -24,6 +14,15 @@
   font-size: 16px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
+
+  @include ms {
+    margin-left: 25px;
+  }
+
+  @include sm {
+    margin-left: 25px;
+    font-size: 14px;
+  }
 }
 
 .sort-by-container {
@@ -31,6 +30,11 @@
   align-items: center;
   gap: 32px;
 
+
+  @include md {
+    gap: 20px;
+  }
+  
   @include sm {
     display: none;
   }

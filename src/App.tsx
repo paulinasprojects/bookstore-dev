@@ -32,7 +32,7 @@ const App = () => {
     <Route path="/checkout" element={<LayoutWithDiscover><CheckoutPage/></LayoutWithDiscover>}/>
     <Route path="/checkout/success" element={<LayoutWithDiscover><CheckoutSuccess/></LayoutWithDiscover>}/>
     <Route path="/checkout/failed" element={<LayoutWithDiscover><CheckoutFailed/></LayoutWithDiscover>}/>
-    <Route path="/detail/books/:bookId" element={<LayoutWithDiscover><BookDetailsPage/></LayoutWithDiscover>}/>
+    <Route path="/detail/books/:bookId" element={<LayoutWithDiscover>< BookDetailsPage/></LayoutWithDiscover>}/>
     <Route path="*" element={<Navigate to="/"/>}/>
    </Routes>
   )

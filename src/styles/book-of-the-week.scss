@@ -19,6 +19,10 @@
   margin-bottom: 65px;
   margin-right: 80px;
 
+  @include ms {
+    margin-left: 20px;
+  }
+
   @include sm {
     margin-top: 0;
     margin-left: 20px;
@@ -56,6 +60,10 @@
   height: 610px;
   background-color: var(--base-color-100);
   margin-left: 80px;
+
+  @include ms {
+    margin-left: 20px;
+  }
 
   @include sm {
     width: 335px;
@@ -281,6 +289,10 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 
+  @include ms {
+    display: none;
+  }
+
   @include sm {
     color: var(--base-color-300);
     font-size: 16px;
@@ -297,4 +309,8 @@
   border: none;
   margin-top: 16px;
   margin-bottom: 16px;
+
+  @include ms {
+    display: none;
+  }
 }

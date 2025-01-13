@@ -5,7 +5,7 @@ import LoginActivityCard from './login-activity-card';
 
 const Security = () => {
   return (
-    <div>
+    <div className='security-main-container'>
       <div className="security-container">
         <span className='security-title'>Security</span>
       </div>

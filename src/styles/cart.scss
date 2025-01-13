@@ -11,6 +11,12 @@
     gap: 20px;
   }
 
+  @include ms {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   @include sm {
     flex-direction: column;
   }
@@ -20,6 +26,11 @@
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
+
+  @include ms {
+    justify-content: unset;
+    gap: 80px;
+  }
 
   @include sm {
     justify-content: unset;
@@ -51,6 +62,10 @@
   padding-bottom: 24px;
   border-radius: 4px;
   background-color: var(--information-red-color-100);
+
+  @include ms {
+    width: 550px;
+  }
 
   @include sm {
     width: 335px;
@@ -173,8 +188,15 @@
 .calculation-container {
   background-color: var(--base-color-100);
   padding: 20px 30px;
+
+
   @include md {
     padding: 20px 15px;
+  }
+
+
+  @include ms {
+    padding: 20px 20px;
   }
 
   @include sm {
@@ -216,6 +238,10 @@
 
     @include md {
       gap: 190px;
+    }
+
+    @include ms {
+      justify-content: space-between;
     }
 
     .delivery-home {

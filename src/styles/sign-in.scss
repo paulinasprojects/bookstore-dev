@@ -30,6 +30,10 @@
    flex: 2;
   }
 
+  @include ms {
+    display: none;
+  }
+
   @include sm {
     display: none;
   }
@@ -78,11 +82,19 @@
     width: 490px;
     height: 848px;
   }
+
+  @include ms {
+    align-items: center;
+  }
 }
 
 .login-modal-close-button-container {
   margin-top: 30px;
   margin-right: 80px;
+
+  @include ms {
+    margin-left: auto;
+  }
 
   @include sm {
     margin-right: 20px;

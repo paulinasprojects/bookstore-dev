@@ -63,9 +63,17 @@
   border: 1px solid #E6E6E6;
   outline: none;
 
+  @include ms {
+    width: 240px; 
+  }
+
   @include md {
     width: 359px;
   }
+}
+
+.header-input:focus {
+  outline: 1px solid #8a8484;
 }
 
 .header-button-container {
@@ -74,7 +82,7 @@
   justify-content: center;
   gap: 62px;
   margin-right: 40px;
- 
+
   @include sm {
     gap: 40px;
     margin-bottom: 16px;
@@ -108,6 +116,10 @@
   height: 41px;
   border-radius: 4px;
   cursor: pointer;
+
+  @include ms {
+    width: 137px;
+  }
 
   @include sm {
     width: 137px;

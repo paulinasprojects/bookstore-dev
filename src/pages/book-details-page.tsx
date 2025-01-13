@@ -9,16 +9,15 @@ import GridItem from "@/components/grid-item";
 import "@/styles/book-details.scss";
 
 const BookDetailsPage = () => {
-
   return (
-    <div>
-      <div className="book-details-flex-container">
-        {/* Left */}
-        <div className="book-details-images-container">
+    <div className='book-details-first-flex-container'>
+      {/* Flex Container */}
+      <div className='book-details-flex-flex-container'>
+        <div className='book-details-image-container'>
           <div className="book-details-container">
-            <div className="images-container">
-              <div className="first-image-container">
-                <img src={testimage} alt="" className="image-1" />
+            <div className='images-container'>
+              <div className='first-image-container'>
+                <img src={testimage} alt="" className='image-1' />
               </div>
               <div className="second-image-container">
                 <div>
@@ -33,47 +32,7 @@ const BookDetailsPage = () => {
               </div>
             </div>
           </div>
-          {/*  */}
-          <div className="book-details-summary-container">
-            <div className="book-summary-container">
-              <span className="book-summary-title">Summary</span>
-              <span className="book-summary-description">
-                The Stories of Choo Choo is a compilation of drawings created by Citra <br />
-                 Marina during her daily train ride on Jakarta Commuter Line. These <br />
-                drawings feature Choo Choo, a fox dog character named after the train <br />
-                 sound, speaking out thoughts that are occasionally deep, often amusing..
-              </span>
-              <div className="summary-last-paragraph-container">
-               <span className="summary-last-paragraph"> ...and hopefully relatable.</span>
-              </div>
-            </div>
-          </div>
-          <div className="book-details-reviews-container">
-              <div className="book-details-review-title-container">
-                <span className="reviews-title">Review</span>
-                <button className="reviews-see-all">See All</button>
-              </div>
-              <DetailsReviews
-                description=" The Stories of Choo Choo is a compilation of drawings created by Citra Marina during her daily train ride on Jakarta Commuter Line."
-                icon={<Star/>}
-                title="Jeremy Zucker"
-                image={reviewPic1}
-              />
-              <DetailsReviews
-                description=" The Stories of Choo Choo is a compilation of drawings created by Citra Marina during her daily train ride on Jakarta Commuter Line."
-                icon={<Star/>}
-                title="Jeremy Zucker"
-                image={reviewPic3}
-              />
-              <DetailsReviews
-                description=" The Stories of Choo Choo is a compilation of drawings created by Citra Marina during her daily train ride on Jakarta Commuter Line."
-                icon={<Star/>}
-                title="Jeremy Zucker"
-                image={reviewPic2}
-              />
-          </div>
         </div>
-        {/* Right */}
         <div className="book-details-right-container">
           <div className="book-details-title-share-container">
             <span className="book-details-writer">Citra Marina</span>
@@ -123,7 +82,42 @@ const BookDetailsPage = () => {
           </div>
         </div>
       </div>
-      <div className="book-details-books-summary-container">
+      <div className="book-details-summary-container">
+        <div className="book-summary-container">
+          <span className="book-summary-title">Summary</span>
+          <span className="book-summary-description">
+            The Stories of Choo Choo is a compilation of drawings created by Citra <br />
+            Marina during her daily train ride on Jakarta Commuter Line. These <br />
+            drawings feature Choo Choo, a fox dog character named after the train <br />
+            sound, speaking out thoughts that are occasionally deep, often amusing..
+          </span>
+          <div className="summary-last-paragraph-container">
+            <span className="summary-last-paragraph"> ...and hopefully relatable.</span>
+          </div>
+        </div>
+      </div>
+          <div className="book-details-reviews-container">
+              <div className="book-details-review-title-container">
+                <span className="reviews-title">Review</span>
+                <button className="reviews-see-all">See All</button>
+              </div>
+              <DetailsReviews
+                icon={<Star/>}
+                title="Jeremy Zucker"
+                image={reviewPic1}
+              />
+              <DetailsReviews
+                icon={<Star/>}
+                title="Jeremy Zucker"
+                image={reviewPic3}
+              />
+              <DetailsReviews
+                icon={<Star/>}
+                title="Jeremy Zucker"
+                image={reviewPic2}
+              />
+          </div> 
+          <div className="book-details-books-summary-container">
             <div className="book-details-new-books ">
               <span className="reviews-title">New Books</span>
               <button className="reviews-see-all">See All</button>

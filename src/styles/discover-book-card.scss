@@ -16,6 +16,10 @@
     gap: 24px;
   }
 
+  @include ms {
+    margin-left: 20px;
+  }
+
   @include sm {
     margin-left: 20px;
     align-items: flex-start;
@@ -40,6 +44,13 @@
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  @include ms {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
     line-height: 120%;
   }
 
@@ -80,14 +91,20 @@
   width: 232px;
   height: 340px;
 
+
   @include md {
     width: 176px;
     height: 223px;
   }
 
+  @include ms {
+    width: 156px;
+    height: 223px;
+  }
+
   @include sm {
-    width: 120px;
-    height: 169px;
+    width: 218px;
+    height: 238px;
   }
 }
 
@@ -101,6 +118,10 @@
   background-color: var(--base-color-200);
   color: var(--base-color-200);
   border: none;
+
+  @include ms {
+    width: 180px;
+  }
 
   @include sm {
     width: 150px;
@@ -151,6 +172,11 @@
   flex-direction: column;
   gap: 8px;
   margin-left: 61px;
+
+  @include ms {
+    margin-left: 40px;
+  }
+
 
   .discover-buy-now {
     color: var(--base-color-400);

@@ -5,10 +5,17 @@
   margin-left: 40px;
   margin-bottom: 10px;
   justify-content: space-between;
+  
 
   @include md {
     margin-left: 20px;
     gap: 30px;
+  }
+
+  @include ms {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
   }
 
   @include sm {
@@ -228,6 +235,14 @@
   margin-bottom: 169px;
   display: flex;
   flex-direction: column;
+
+  @include ms {
+    margin-bottom: 40px;
+  }
+  
+  @include sm {
+    margin-bottom: 40px;
+  }
 
   .total-price-container {
     display: flex;

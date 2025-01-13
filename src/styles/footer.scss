@@ -13,6 +13,10 @@
     gap: 90px;
   }
 
+  @include ms {
+    gap: 50px;
+  }
+
   @include sm {
     flex-direction: column;
     gap: 0;
@@ -24,6 +28,10 @@
   flex-direction: column;
   margin-top: 40px;
   margin-left: 80px;
+
+  @include ms {
+    margin-left: 10px;
+  }
 
   @include sm {
     margin-left: 10px;
@@ -116,6 +124,11 @@
     gap: 90px;
   }
 
+  @include ms {
+    gap: 50px;
+  }
+
+
   @include sm {
     margin-top: 0;
     margin-left: 20px;
@@ -153,6 +166,7 @@
 .footer-social-link-container {
   display: flex;
   justify-content: space-between;
+
 
   @include sm {
     flex-direction: column;

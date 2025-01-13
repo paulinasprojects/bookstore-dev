@@ -17,7 +17,7 @@ const AddressList = () => {
   };
 
   return (
-    <div>
+    <div className="address-list-main-content-container">
       <div className="address-list-container">
         <input type="text" placeholder="Search address" className="address-list-input" />
         <button className="add-new-address-button" onClick={() => setOpen(!open)}>Add New Address</button>

@@ -13,6 +13,10 @@
 }
 
 .logo {
+  @include ms {
+    display: none; 
+  }
+
   @include sm {
     display: none;
   }
@@ -26,6 +30,10 @@
   @include lg {
     display: none;
   }
+
+  // @include ms {
+  //   display: flex;
+  // }
 
   @include sm {
     display: flex;

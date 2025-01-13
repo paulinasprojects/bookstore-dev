@@ -6,6 +6,10 @@
   justify-content: space-between;
   gap: 24px;
   
+  @include ms {
+    flex-direction: column;
+  }
+
   @include sm {
     flex-direction: column;
   }
@@ -18,6 +22,10 @@
   @include md {
     margin-top: 23px;
     margin-left: 60px;
+  }
+
+  @include ms {
+    margin-left: 40px;
   }
 
   @include sm {
@@ -115,9 +123,11 @@
   margin-bottom: 20px;
 
   @include md {
+    margin-top: 40px;
     flex-direction: column;
     gap: 0;
   }
+
 }
 
 .hero-testimonial-container {
@@ -131,10 +141,11 @@
   margin-left: 80px;
 
   @include md  {
-    width: 346px;
-    height: 150px;
-    margin-left: 50px;
-    margin-top: -35px;
+    display: none;
+  }
+
+  @include ms {
+    display: none;
   }
 
   @include sm {
@@ -176,6 +187,14 @@
 
   @include md {
     margin-left: 80px;
+  }
+
+
+  @include ms {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   @include sm {

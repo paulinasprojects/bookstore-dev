@@ -1,5 +1,15 @@
 @import "./responsive.scss";
 
+.security-main-container {
+  @include ms {
+    margin-left: 40px;
+  }
+
+  @include sm {
+    margin-left: 20px;
+  }
+}
+
 .security-container {
   margin-top: 32px;
 

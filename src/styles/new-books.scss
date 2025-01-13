@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include ms {
+    margin-left: 40px;
+  }
+
   @include sm {
     margin-top: 40px;
     margin-left: 0;

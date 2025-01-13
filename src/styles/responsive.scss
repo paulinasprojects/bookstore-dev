@@ -1,5 +1,11 @@
 @mixin sm {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin ms {
+  @media (min-width: 768px) and (max-width:1023px) {
     @content;
   }
 }
