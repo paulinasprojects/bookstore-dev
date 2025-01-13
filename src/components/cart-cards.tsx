@@ -1,7 +1,8 @@
 import { FiTrash } from "react-icons/fi";
-
-import "@/styles/cart-cards.scss";
+import { useState } from "react";
 import SellectAllCheckbox from "./checkbox";
+import ActionModal from "./actions-modal";
+import "@/styles/cart-cards.scss";
 
 interface CartCardsProps {
   cardTitle: string;
@@ -11,6 +12,12 @@ interface CartCardsProps {
 }
 
 const CartCards = ({ cardImage, cardInStock, cardQuantity, cardTitle }: CartCardsProps) => {
+  const [openDeleteModal, setOpenDeleteModal] = useState<boolean>(false);
+
+  const onDeleteOpenModal = () => {
+    setOpenDeleteModal(!openDeleteModal)
+  };
+
   return (
     <> 
     <div className="card-container">
@@ -24,7 +31,7 @@ const CartCards = ({ cardImage, cardInStock, cardQuantity, cardTitle }: CartCard
           <p className="card-stock">{cardInStock}</p>
           <div className="card-actions">
             <button className="add-item-button">ADD ITEM</button>
-            <button className="delete-item-button">
+            <button className="delete-item-button" onClick={() => setOpenDeleteModal(!openDeleteModal)}>
               <FiTrash className="trash-icon"/>
             </button>
           </div>
@@ -37,6 +44,14 @@ const CartCards = ({ cardImage, cardInStock, cardQuantity, cardTitle }: CartCard
         </div>
       </div>
     </div>
+    {openDeleteModal && (
+      <ActionModal
+        setOpen={onDeleteOpenModal}
+        title="Remove"
+        description="Are you sure you want to remove this item from the cart"
+          buttonAction="Remove"
+        />
+    )}
     </>
   )
 }
