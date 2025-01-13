@@ -87,6 +87,10 @@
     }
   }
 
+  .add-new-address-form-input:focus {
+    border: 1.5px solid #2708d8;
+  }
+
   .add-new-address-form-address {
     width: 360px;
     height: 80px;
@@ -102,6 +106,10 @@
       width: 271px;
       height: 76px;
     }
+  }
+
+  .add-new-address-form-address:focus {
+    border: 1.5px solid #2708d8;
   }
 
   .add-new-address-column-container {

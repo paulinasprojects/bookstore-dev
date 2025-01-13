@@ -133,6 +133,10 @@
   }
 }
 
+.newsletter-input:focus {
+  border: 1.5px solid #2708d8;
+}
+
 .newsletter-send-button {
   width: 235px;
   height: 56px;
